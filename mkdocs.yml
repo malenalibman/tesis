@@ -4,3 +4,6 @@ nav:
   - Indice: index.md
   - Capitulo 1: capitulo1.md 
   - Capitulo 2: capitulo2.md 
+  
+markdown_extensions:
+     - fontawesome_markdown  
