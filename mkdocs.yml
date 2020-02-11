@@ -2,7 +2,7 @@
 site_name: Trabajo final de SIG
 site_description: Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas
 site_author: Malena Libman
-site_url: https://github.com/malenalibman/tesis/
+site_url: https://malenalibman.github.io/tesis/
 
 nav: 
   - Inicio: index.md
