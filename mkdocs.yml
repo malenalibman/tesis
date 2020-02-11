@@ -1,6 +1,6 @@
 site_name: Tesis Malena Libman
-theme: readthedocs
+theme: material
 nav: 
-  - Home: index.md
+  - Indice: index.md
   - Capitulo 1: capitulo1.md 
   - Capitulo 2: capitulo2.md 
