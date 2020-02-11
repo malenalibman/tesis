@@ -1,6 +1,10 @@
+title: Evaluación de Infraestructuras de Datos Espaciales
+description: Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas
+path: media/
+source: tesis.docx
+
 # **Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas**
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
 
 ## Commands
 
@@ -9,33 +13,29 @@ For full documentation visit [mkdocs.org](https://mkdocs.org).
 * `mkdocs build` - Build the documentation site.
 * `mkdocs help` - Print this help message.
 
-## Project layout
+## Agradecimientos
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-    
-        ...       # Other markdown pages, images and other files.
+A Mariana Gasparotto, directora, colega y amiga
 
-#[:fa-github: Malena Libman Repo](https://github.com/malenalibman)
+A Carlos Rodolfo Martínez, experto en tesis, pero sobre todo partenaire de la
+vida
 
-https://github.com/malenalibman 
+A la universidad pública, ahí me caigo siempre
 
-:fa-coffee:
+Al bodoque, porque no hay nada más puro en este mundo
 
-Tabla de Contenidos
-===================
+!!! note ""
+    Soluciona los errores, pero ten en mente que, aún antes de alcanzar la
+    perfección, tarde o temprano tienes que dejarlo y seguir escribiendo tu próximo proyecto. Alcanzar la perfección es como perseguir el horizonte, siempre debes seguir adelante.
 
-[Tabla de Contenidos](#tabla-de-contenidos)
+    *Neil Gaiman*
 
-[Tabla de Ilustraciones](#tabla-de-ilustraciones)
 
-[Introducción](#_Toc32301227)
+[:fa-github: Malena Libman Repo](https://github.com/malenalibman/){target=_blank} 
 
-[1. Problema de investigación y objetivos](#_Toc32301228)
+[link](google.com){:target="_blank"}
+<a href="https://github.com/malenalibman" target="_blank">Hello, world! :fa-external-link:</a>
 
-[a. Objetivo General](#_Toc32301229)
+<a href="media/tesis.docx" target="_blank">Descarga:fa-external-link:</a>
 
-[b. Objetivos Específicos](#_Toc32301230)
-
-[2. Marco Teórico](#_Toc32301231)
+Please see the [project license](0_agradecimientos.md) for further details.

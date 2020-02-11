@@ -1,12 +1,81 @@
-site_name: Tesis Malena Libman
-theme: readthedocs
-nav: 
-  - Indice: index.md
-  - Introducción: introduccion.md
-  - Problema de Investigación: 1_problema.md
-  - La evaluación de IDE de IDERA:  5_evaluaciondeide.md
-  - Antecedentes:  5_evaluaciondeide1.md
 
+site_name: Trabajo final de SIG
+site_description: Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas
+site_author: Malena Libman
+site_url: https://github.com/malenalibman/tesis/
+
+nav: 
+  - Inicio: index.md
+  - Trabajo final:
+    - Introducción: 0_introduccion.md
+    - Problema de Investigación: 1_problema.md
+    - Marco Teórico: 2_marcoteorico.md
+    - Metodología: 3_metodologia.md
+    - Estado del arte: 4_estadodelarte.md
+    - Conclusiones: 6_conclusiones.md
+    - Bibliografía: 7_bibliografia.md
+  - Anexo: 8_anexo.md
+  - Desarrollo de la Investigacion:  
+      - Antecedentes: 5_evaluaciondeide1.md
+      - Primera versión: 5_evaluaciondeide2.md
+      - Identificación de oportunidades de mejora:  5_evaluaciondeide3.md
+      - Propuesta de mejoras: 5_evaluaciondeide4.md
+      - Sugerencias para la implementación: 5_evaluaciondeide5.md
+
+  - "": media/tesis.docx
   
 markdown_extensions:
      - fontawesome_markdown  
+     - toc:
+        baselevel: 1
+        toc_depth: 4
+        permalink: true
+     - footnotes        
+     - meta
+     - admonition
+     - pymdownx.arithmatex
+     - pymdownx.betterem:
+        smart_enable: all
+     - pymdownx.caret
+     - pymdownx.critic
+     - pymdownx.details
+     - pymdownx.emoji:
+         emoji_generator: !!python/name:pymdownx.emoji.to_svg
+     - pymdownx.inlinehilite
+     - pymdownx.magiclink
+     - pymdownx.mark
+     - pymdownx.smartsymbols
+     - pymdownx.superfences
+     - pymdownx.tasklist:
+        custom_checkbox: true
+     - pymdownx.tilde         
+extra_css:
+    - css/extra.css 
+
+theme: 
+  name: 'material'
+  custom_dir: 'mkdocs-material/material'
+  palette:
+    primary: 'light green'
+    accent: 'lime'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  language: 'es'       
+  feature:
+    tabs: true
+
+copyright: 'Trabajo final de carrera Licenciatura en Sistemas de Información Geográfica de Malena Libman'
+# Repository
+repo_name: malenalibman/tesis
+repo_url: https://github.com/malenalibman/tesis
+edit_uri: ""
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/malenalibman/'
+    - type: 'twitter'
+      link: 'https://twitter.com/malenillavv'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/malena-libman/'

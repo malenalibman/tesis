@@ -1,112 +1,663 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>5 evaluaciondeide5 - Tesis Malena Libman</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "5 evaluaciondeide5";
-    var mkdocs_page_input_path = "5_evaluaciondeide5.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
 
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Tesis Malena Libman</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas">
+      
+      
+        <link rel="canonical" href="https://github.com/malenalibman/tesis/5_evaluaciondeide5/">
+      
+      
+        <meta name="author" content="Malena Libman">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.2">
+    
+    
+      
+        <title>Sugerencias para la implementación - Trabajo final de SIG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#7cb342">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-green" data-md-color-accent="lime">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#la-evaluacion-de-ide-de-idera" tabindex="0" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/malenalibman/tesis/" title="Trabajo final de SIG" aria-label="Trabajo final de SIG" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Trabajo final de SIG
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Sugerencias para la implementación
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+        
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Indice</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../introduccion/">Introducción</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../1_problema/">Problema de Investigación</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../5_evaluaciondeide/">La evaluación de IDE de IDERA</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../5_evaluaciondeide1/">Antecedentes</a>
-	    </li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Tesis Malena Libman</a>
-      </nav>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
 
+
+  
+
+<a href="https://github.com/malenalibman/tesis" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    malenalibman/tesis
+  </div>
+</a>
+          </div>
+        </div>
       
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
+    </div>
+  </nav>
+</header>
     
+    <div class="md-container">
       
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
     
-    <li>5 evaluaciondeide5</li>
-    <li class="wy-breadcrumbs-aside">
+      <a href=".." class="md-tabs__link">
+        Inicio
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../0_introduccion/" class="md-tabs__link">
+          Trabajo final
+        </a>
       
     </li>
+  
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../5_evaluaciondeide1/" class="md-tabs__link md-tabs__link--active">
+          Desarrollo de la Investigacion
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/malenalibman/tesis/" title="Trabajo final de SIG" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Trabajo final de SIG
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/malenalibman/tesis" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    malenalibman/tesis
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Trabajo final
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Trabajo final
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../0_introduccion/" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1_problema/" title="Problema de Investigación" class="md-nav__link">
+      Problema de Investigación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2_marcoteorico/" title="Marco Teórico" class="md-nav__link">
+      Marco Teórico
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3_metodologia/" title="Metodología" class="md-nav__link">
+      Metodología
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4_estadodelarte/" title="Estado del arte" class="md-nav__link">
+      Estado del arte
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../6_conclusiones/" title="Conclusiones" class="md-nav__link">
+      Conclusiones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../7_bibliografia/" title="Bibliografía" class="md-nav__link">
+      Bibliografía
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../8_anexo/" title="Anexo" class="md-nav__link">
+      Anexo
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Desarrollo de la Investigacion
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Desarrollo de la Investigacion
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide1/" title="Antecedentes" class="md-nav__link">
+      Antecedentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide2/" title="Primera versión" class="md-nav__link">
+      Primera versión
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide3/" title="Identificación de oportunidades de mejora" class="md-nav__link">
+      Identificación de oportunidades de mejora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide4/" title="Propuesta de mejoras" class="md-nav__link">
+      Propuesta de mejoras
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Sugerencias para la implementación
+      </label>
+    
+    <a href="./" title="Sugerencias para la implementación" class="md-nav__link md-nav__link--active">
+      Sugerencias para la implementación
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sugerencias-para-la-implementacion" class="md-nav__link">
+    Sugerencias para la implementación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-facilitadora-del-esquema-de-evaluacion" class="md-nav__link">
+    Estructura facilitadora del esquema de evaluación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-informe-anual-como-un-formulario" class="md-nav__link">
+    El informe anual como un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-base-de-datos-de-idera" class="md-nav__link">
+    La Base de Datos de IDERA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramienta-de-monitoreo-de-geoservicios-geohealthcheck" class="md-nav__link">
+    Herramienta de monitoreo de geoservicios: GeoHealthCheck
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../media/tesis.docx" title="" class="md-nav__link">
+      
+    </a>
+  </li>
+
+    
   </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sugerencias-para-la-implementacion" class="md-nav__link">
+    Sugerencias para la implementación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-facilitadora-del-esquema-de-evaluacion" class="md-nav__link">
+    Estructura facilitadora del esquema de evaluación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-informe-anual-como-un-formulario" class="md-nav__link">
+    El informe anual como un formulario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-base-de-datos-de-idera" class="md-nav__link">
+    La Base de Datos de IDERA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramienta-de-monitoreo-de-geoservicios-geohealthcheck" class="md-nav__link">
+    Herramienta de monitoreo de geoservicios: GeoHealthCheck
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
-                <h1 id="la-evaluacion-de-ide-de-idera">La evaluación de IDE de IDERA</h1>
-<h2 id="sugerencias-para-la-implementacion">Sugerencias para la implementación</h2>
+                
+                
+                <h1 id="la-evaluacion-de-ide-de-idera">La evaluación de IDE de IDERA<a class="headerlink" href="#la-evaluacion-de-ide-de-idera" title="Permanent link">&para;</a></h1>
+<h2 id="sugerencias-para-la-implementacion">Sugerencias para la implementación<a class="headerlink" href="#sugerencias-para-la-implementacion" title="Permanent link">&para;</a></h2>
 <p>En base a las propuestas de mejoras desarrolladas en la sección anterior, se
 presentan, entonces, las siguientes sugerencias para su implementación efectiva
 en la evaluación de IDE de IDERA.</p>
@@ -124,7 +675,7 @@ evaluación.</p>
 <p>Finalmente, se da cuenta de la potencia de una herramienta, basada en software
 libre y de código abierto, para el monitoreo de la salud de los geoservicios de
 las IDE de IDERA, entre otros posibles usos.</p>
-<h3 id="estructura-facilitadora-del-esquema-de-evaluacion">Estructura facilitadora del esquema de evaluación</h3>
+<h3 id="estructura-facilitadora-del-esquema-de-evaluacion">Estructura facilitadora del esquema de evaluación<a class="headerlink" href="#estructura-facilitadora-del-esquema-de-evaluacion" title="Permanent link">&para;</a></h3>
 <p>Se sugiere modificar la estructura del esquema de evaluación (archivo de hojas
 de cálculo), incorporando una serie de elementos tendientes a lograr que la
 tarea de dar cuenta de su situación respecto a los distintos indicadores
@@ -151,30 +702,30 @@ IDERA y, además:</p>
 <p>Resumen de calificación por tema y calificación final</p>
 </li>
 </ul>
-<h5 id="figura-2-miniatura-del-esquema-de-evaluacion">Figura 2 - Miniatura del Esquema de Evaluación</h5>
+<h5>Figura 2 - Miniatura del Esquema de Evaluación</h5>
 <p><img alt="" src="../media/484359af17dc834ce83b3b523618d082.png" /></p>
 <p>Fuente: elaboración propia en base a IDERA</p>
 <p>Asimismo, también resulta de utilidad incorporar un cuadro de indicadores
 separados por tema (Figura 3), que incluya las fórmulas correspondientes, como
 otro elemento que contribuya a facilitar y mejorar el análisis.</p>
-<h5 id="figura-3-detalle-de-formula-por-temas">Figura 3 - Detalle de fórmula por temas</h5>
+<h5>Figura 3 - Detalle de fórmula por temas</h5>
 <p><img alt="" src="../media/dd3f0b5d820992e4b37031b87a5cd034.png" /></p>
 <p>Fuente: elaboración propia en base a IDERA</p>
 <p>De esta forma, es posible visualizar mejor la sumatoria de los resultados de
 cada tema, según surge de los respectivos cuadros.</p>
-<h5 id="figura-4-detalle-de-listado-de-opciones-variables-binarias">Figura 4 - Detalle de listado de opciones variables binarias</h5>
+<h5>Figura 4 - Detalle de listado de opciones variables binarias</h5>
 <p><img alt="" src="../media/99b93e26a524f1db8f1e05a7740ece2f.png" /></p>
 <p>Fuente: elaboración propia en base a IDERA.</p>
 <p>Así, se propone un conjunto de fórmulas que permiten asignar el puntaje
 correspondiente en los indicadores cuyas respuestas posibles son “Sí” o “NO”
 (Figura 4 y 5).</p>
-<h5 id="figura-5-ejemplo-de-formula-para-variables-binarias">Figura 5 - Ejemplo de fórmula para variables binarias</h5>
+<h5>Figura 5 - Ejemplo de fórmula para variables binarias</h5>
 <p><img alt="" src="../media/1cb65e10bd8a2a6f588933190a885dbf.png" /></p>
 <p>Fuente: elaboración propia en base a IDERA</p>
 <p>Del mismo modo, para las variables cuyos resultados se calculan en razón del
 porcentaje de capas que cumplen con la respectiva recomendación, es útil usar
 fórmulas del tipo que se muestra en la siguiente figura (Figura 6).</p>
-<h5 id="figura-6-ejemplo-de-formula-para-el-calculo-del-porcentaje-de-capas">Figura 6 - Ejemplo de fórmula para el cálculo del porcentaje de capas</h5>
+<h5>Figura 6 - Ejemplo de fórmula para el cálculo del porcentaje de capas</h5>
 <p><img alt="" src="../media/ec23737bd63b912801ed72d07070bce3.png" /></p>
 <p><img alt="" src="../media/e8b46b49d1090f3bb1493eb24b2557aa.png" /></p>
 <p>Fuente: elaboración propia en base a IDERA.</p>
@@ -182,10 +733,10 @@ fórmulas del tipo que se muestra en la siguiente figura (Figura 6).</p>
 DByF, cada organismo y determinar si cumple o no con las condiciones requeridas,
 incluyendo una fórmula que posibilita calcular el porcentaje de cumplimiento por
 indicador.</p>
-<h5 id="figura-7-solapa-de-dbyf-de-la-evaluacion-ide-v2">Figura 7 - Solapa de DByF de la Evaluación IDE v2</h5>
+<h5>Figura 7 - Solapa de DByF de la Evaluación IDE v2</h5>
 <p><img alt="" src="../media/0833f4e668ab6b9c40cf5e2ca4a4066d.png" /></p>
 <p>Fuente: elaboración propia en base a IDERA</p>
-<h3 id="el-informe-anual-como-un-formulario">El informe anual como un formulario</h3>
+<h3 id="el-informe-anual-como-un-formulario">El informe anual como un formulario<a class="headerlink" href="#el-informe-anual-como-un-formulario" title="Permanent link">&para;</a></h3>
 <p>Vale recordar que el informe anual consiste en una serie de ítems de información
 que se le solicita a la IDE sobre sus características y su situación. Algunos de
 estos requerimientos son sencillos de responder, en formato de texto plano o
@@ -203,20 +754,18 @@ a loguearse con su usuario de Google. Además, el formato de estos formularios e
 poco intuitivo y no permite realizar múltiples ediciones.</p>
 <p>De este modo, aunque se reconoce que no hay una solución del todo óptima para el
 envío del informe anual por parte de las IDE, se propone seguir explorando las
-posibilidades que ofrece el uso de formularios de Google[^11] para esta tarea.</p>
-<p>[^11]: <a href="https://www.google.com/intl/es-419_ar/forms/about/">Formularios de
-Google</a></p>
-<h5 id="figura-8-ejemplo-de-formulario-de-google-para-informe-anual">Figura 8 - Ejemplo de formulario de Google para informe anual</h5>
+posibilidades que ofrece el uso de formularios de Google<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">1</a></sup> para esta tarea.</p>
+<h5>Figura 8 - Ejemplo de formulario de Google para informe anual</h5>
 <p><img alt="" src="../media/3331f15df1dcdba8a734f504e56e7b41.png" /></p>
 <p>Fuente: elaboración propia en base a IDERA y Google.</p>
-<h3 id="la-base-de-datos-de-idera">La Base de Datos de IDERA</h3>
+<h3 id="la-base-de-datos-de-idera">La Base de Datos de IDERA<a class="headerlink" href="#la-base-de-datos-de-idera" title="Permanent link">&para;</a></h3>
 <p>Siguiendo el ejemplo de la experiencia de eSDI-NET+ (Figura 9) detallada en el
 estado del arte del presente trabajo y teniendo en cuenta la cantidad de nodos
 IDE existentes en la Argentina, resultaría muy valioso realizar un seguimiento,
 a lo largo del tiempo, no sólo de las IDE de máxima jerarquía, sino de todas,
 teniendo en cuenta que cada IDE tiene que ser responsable de informar sobre los
 nodos que la componen.</p>
-<h5 id="figura-9-base-de-datos-de-esdi-net">Figura 9 - Base de datos de eSDI-Net+</h5>
+<h5>Figura 9 - Base de datos de eSDI-Net+</h5>
 <p><img alt="" src="../media/541291e5e403bb99defb58558b00927e.png" /></p>
 <p>Fuente: <a href="https://esdinetplus.eu/best_practice/database.html">eSDI-Net+ Database of
 SDI</a></p>
@@ -228,10 +777,10 @@ IDE, se mantenga actualizado de una manera más sencilla y económica.</p>
 <p>Respecto a ello, se presenta, a continuación, un ejemplo de modelo de
 entidad-relación de base de datos que permite cubrir la totalidad de los datos a
 relevar de las IDE (Figura 10).</p>
-<h5 id="figura-10-ejemplo-de-modelo-de-entidad-relacion-de-base-de-datos-para-idera">Figura 10 - Ejemplo de modelo de entidad-relación de base de datos para IDERA</h5>
+<h5>Figura 10 - Ejemplo de modelo de entidad-relación de base de datos para IDERA</h5>
 <p><img alt="" src="../media/8456010a056345bb2e3227775c121d4b.png" /></p>
 <p>Fuente: elaboración propia.</p>
-<h3 id="herramienta-de-monitoreo-de-geoservicios-geohealthcheck">Herramienta de monitoreo de geoservicios: GeoHealthCheck</h3>
+<h3 id="herramienta-de-monitoreo-de-geoservicios-geohealthcheck">Herramienta de monitoreo de geoservicios: GeoHealthCheck<a class="headerlink" href="#herramienta-de-monitoreo-de-geoservicios-geohealthcheck" title="Permanent link">&para;</a></h3>
 <p>Una herramienta de software libre y de código abierto que se desarrolló en el
 último tiempo y que tiene gran potencial respecto a la posibilidad de
 automatizar el proceso de relevamiento de la salud de los geoservicios de las
@@ -245,53 +794,135 @@ de operación de los servicios web de OGC.</p>
 <p>A su vez, esta herramienta, a través de complementos, puede expandir sus
 capacidades para utilizarse en la realización de verificaciones específicas de
 recursos.</p>
-<h5 id="figura-11-interfaz-de-la-demo-de-geohealthcheck">Figura 11 - Interfaz de la demo de GeoHealthCheck</h5>
+<h5>Figura 11 - Interfaz de la demo de GeoHealthCheck</h5>
 <p><img alt="" src="../media/c6089046452b185467fbbb15c630a826.png" /></p>
 <p>Fuente: <a href="https://geohealthcheck.org/">GeoHealthCheck</a></p>
 <p>GeoHealthCheck posee un sencillo sistema de inicio de sesión para que los
 usuarios puedan crear sus propios chequeos (probes) en formato de plugins
 (aplicación que en un programa informático añade una funcionalidad
-adicional)[^12]. Ello solo requiere conocimientos básicos de Python y de
+adicional)<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">2</a></sup>. Ello solo requiere conocimientos básicos de Python y de
 servicios OGC, ya que todo el procedimiento se encuentra detallado en la
 documentación del software (Figura 12).</p>
-<p>[^12]: <a href="https://docs.geohealthcheck.org/en/latest/plugins.html">6. Plugins — GeoHealthCheck 0.8.dev0
-documentation</a></p>
-<h5 id="figura-12-ejemplo-de-chequeo-con-geohealthcheck">Figura 12 - Ejemplo de chequeo con GeoHealthCheck</h5>
+<h5>Figura 12 - Ejemplo de chequeo con GeoHealthCheck</h5>
 <p><img alt="" src="../media/27c1203cd4cb409fbba157d2cff9748c.jpg" /></p>
 <p>Fuente: <a href="https://geohealthcheck.org/">GeoHealthCheck</a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:11">
+<p><a href="https://www.google.com/intl/es-419_ar/forms/about/">Formularios de
+Google</a>&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p><a href="https://docs.geohealthcheck.org/en/latest/plugins.html">6. Plugins — GeoHealthCheck 0.8.dev0
+documentation</a>&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../5_evaluaciondeide4/" title="Propuesta de mejoras" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Propuesta de mejoras
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../media/tesis.docx" title="" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Trabajo final de carrera Licenciatura en Sistemas de Información Geográfica de Malena Libman
+          </div>          
+                
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/malenalibman/" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/malenillavv" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/in/malena-libman/" target="_blank" rel="noopener" title="linkedin" class="md-footer-social__link fa fa-linkedin"></a>
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    </div>
+  </div>
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="../assets/javascripts/application.df00da5d.js"></script>
       
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
       
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
-    </span>
-</div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-
-</body>
+    
+  </body>
 </html>
