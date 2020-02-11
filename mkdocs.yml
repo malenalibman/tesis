@@ -1,5 +1,5 @@
 site_name: Tesis Malena Libman
-theme: material
+theme: flatly
 nav: 
   - Indice: index.md
   - Capitulo 1: capitulo1.md 
