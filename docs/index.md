@@ -29,7 +29,7 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
-[GitHub](https://github.com/malenalibman)
+#[:fa-github: Malena Libman Repo](https://github.com/malenalibman)
 
 https://github.com/malenalibman 
 
