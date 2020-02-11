@@ -2,8 +2,11 @@ site_name: Tesis Malena Libman
 theme: flatly
 nav: 
   - Indice: index.md
-  - Capitulo 1: capitulo1.md 
-  - Capitulo 2: capitulo2.md 
+  - Introducción: introduccion.md
+  - Problema de Investigación: 1_problema.md
+  - La evaluación de IDE de IDERA:  5_evaluaciondeide.md
+     - Antecedentes:  5_evaluaciondeide1.md
+
   
 markdown_extensions:
      - fontawesome_markdown  

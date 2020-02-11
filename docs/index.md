@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# **Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas**
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
 
@@ -14,23 +14,28 @@ For full documentation visit [mkdocs.org](https://mkdocs.org).
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-
+    
         ...       # Other markdown pages, images and other files.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
 
 #[:fa-github: Malena Libman Repo](https://github.com/malenalibman)
 
 https://github.com/malenalibman 
 
 :fa-coffee:
+
+Tabla de Contenidos
+===================
+
+[Tabla de Contenidos](#tabla-de-contenidos)
+
+[Tabla de Ilustraciones](#tabla-de-ilustraciones)
+
+[Introducción](#_Toc32301227)
+
+[1. Problema de investigación y objetivos](#_Toc32301228)
+
+[a. Objetivo General](#_Toc32301229)
+
+[b. Objetivos Específicos](#_Toc32301230)
+
+[2. Marco Teórico](#_Toc32301231)
