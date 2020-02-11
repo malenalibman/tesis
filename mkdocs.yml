@@ -1,11 +1,11 @@
 site_name: Tesis Malena Libman
-theme: flatly
+theme: readthedocs
 nav: 
   - Indice: index.md
   - Introducción: introduccion.md
   - Problema de Investigación: 1_problema.md
   - La evaluación de IDE de IDERA:  5_evaluaciondeide.md
-     - Antecedentes:  5_evaluaciondeide1.md
+  - Antecedentes:  5_evaluaciondeide1.md
 
   
 markdown_extensions:
