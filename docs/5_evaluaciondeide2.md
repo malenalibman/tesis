@@ -289,7 +289,8 @@ considere pertinentes para mejorar su funcionamiento.
 | Norma                                                        | Decreto  publicado en IDERA                       | [Recomendaciones   para la creación de un nodo IDE](http://www.idera.gob.ar/images/stories/downloads/documentos/Recomendaciones_para_la_creación_de_un_nodo_IDE.pdf) | Según  registros de IDERA y/o Geoportal, punto 9             | Norma  publicada: Sí/No                                      | 40%                  |               |
 | Descentralización  de la producción y publicación de la información | Publicación  desde los productores de información | [Descripción   De Datos Básicos y Fundamentales](http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinDByF_V2.0_IDERA.pdf)  <br />[Recomendaciones   para la creación de un nodo IDE de máxima jerarquía](https://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Recomendaciones_para_creacion_de_nodo_IDE.pdf) | Cada  capa debe tener identificado su autor y la URL del geoservicio original, del  productor responsable o designado para la producción y la publicación de la  información. En el caso que el catálogo de metadatos sea descentralizado, los  metadatos estarán cosechados del original. En base a puntos 12 y 16 del  documento de Recomendaciones para la conformación de un nodo IDE de máxima  jerarquía. De acuerdo a las recomendaciones establecidas, en caso de  centralizar la información de otros organismos (nodos), se deberá especificar  el origen de la información en el metadato, tanto en el linaje como en el  contacto del productor de la información | -Si  la información está en el metadato: 100%    - Si la información está en el "abstract" del servicio: 50%    - Si no está publicada: 0%    Adicionalmente debe estar especificado en el geoportal que nodos existen y  cuáles son sus recursos disponibles | 60%                  |               |
 
-Fuente: elaboración propia en base a IDERA
+ 
+
 
 ##### Cuadro 2 - Indicadores del tema Publicación y Geoservicios
 
@@ -310,7 +311,8 @@ Fuente: elaboración propia en base a IDERA
 | CSW DByF                          | generar en  Geonetwork el CSW filtrado                       | Mismas capas  que en el WFS de DByF                          | 25%                                                          |                  |                      |               |
 | Datos Abiertos  o Descarga Masiva | Todas las  capas                                             | [Lineamientos   para el acceso, difusión, uso e interoperabilidad de información geoespacial](http://www.idera.gob.ar/images/stories/downloads/documentos/normativa/Lineamientos_acceso_difusion_uso_e_interoperabilidad_IG_v1-0.pdf) | Se  puede sugerir que en ausencia de un sistema de datos abiertos como junar o  ckan, se usen los links de descarga WFS | Sí/No            |         10%          |               |
 
-Fuente: elaboración propia en base a IDERA.
+ 
+ 
 
 ##### Cuadro 3 - Indicadores del tema Información Geoespacial
 
@@ -323,7 +325,7 @@ Fuente: elaboración propia en base a IDERA.
 | Normalización  de Nombres de capas |Nombre sin caracteres especiales<br />Título de acuerdo a catálogo<br />1 capa = 1  objeto del catálogo | [Normalización   de Capas para Servicios OGC](https://www.idera.gob.ar/images/stories/downloads/estandares/Normalizacin_de_capas_para_servicios_OGC.pdf) | Debe cumplir  con las condiciones de la recomendación del documento | Porcentaje de capas publicadas que  cumplen cada recomendación | 30%                  |               |
 | Actualización                      | Fecha de  actualización del Recurso                          | [Perfil   de Metadatos para Datos Vectoriales](http://idera.gob.ar/images/stories/downloads/estandares/PMIDERA_Perfil_Metadatos_p_Datos_Vectoriales_IDERA_V2_0.pdf) | Verificación  en el metadato de la última fecha de actualización del recurso y del período  de actualización | 100% si es  menos de un año                                  | 5%                   |               |
 
-Fuente: elaboración propia en base a IDERA.
+
 
 ##### Cuadro 4 - Indicadores del tema Metadatos
 
@@ -336,7 +338,7 @@ Fuente: elaboración propia en base a IDERA.
 | Título  coincidente con geoservicio y Catálogo de datos | (en revisión  por Grupo Metadatos)                           | Verificación  con el WFS DByF y el catálogo, a partir del CSW de DByF | Cantidad de  capas                                           | 20%              |                      |               |
 | Link al  Recurso                                        | [Buenas   Prácticas en Metadatos](https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Guia_de_Buenas_Practicas_de_Metadatos_V1_0.pdf) | Comprobar que  el link del recurso del Metadato si posee un geoservicio (WMS / WFS) en el  Servidor de Mapa URL Metadata haga referencia al metadato donde se está  analizando este link | Sí/No                                                        | 30%              |                      |               |
 
-Fuente: elaboración propia en base a IDERA.
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 En un primer momento, a fin de analizar la pertinencia y utilidad de la
 evaluación desarrollada, como experiencia piloto se seleccionó la

@@ -1,3 +1,6 @@
+path: media/
+source: tesis.docx
+
 ## Descarga
 
 <a href="media/tesis.docx" target="_blank">Trabajo final de Carrera :fa-external-link:</a>

@@ -6,6 +6,8 @@ site_url: https://malenalibman.github.io/tesis/
 
 nav: 
   - Inicio: index.md
+  - Licenciatura en SIG: licenciatura.md
+  - Archivos: descarga.md
   - Trabajo final:
     - Introducción: 0_introduccion.md
     - Problema de Investigación: 1_problema.md

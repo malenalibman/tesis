@@ -1,6 +1,6 @@
 ## Licenciatura en Sistemas de Información Geográfica
 
-![](C:\Users\pioji\Documents\GitHub\tesis\docs\media\imagen_sig.jpg)
+![](media/imagen_sig.jpg)
 
 Este trabajo de investigación se realizó en el marco del trabajo final de la carrera de la Universidad Nacional de Tres de Febrero.
 

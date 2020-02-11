@@ -153,4 +153,4 @@ Anexo: Tabla de Seguimiento de Nodos IDE
 | Municipalidad de Rosario                                    | Local        | Santa Fe               | NO                    | SÍ   | NO   | Mapserver     |
 | SIG de la Municipalidad de  San Miguel de Tucumán           | Local        | Tucumán                | NO                    | SÍ   | NO   | Geoserver     |
 
-Fuente: elaboración propia a partir de datos de IDERA
+###### *Fuente: elaboración propia a partir de datos de IDERA*

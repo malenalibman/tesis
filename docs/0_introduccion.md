@@ -36,19 +36,19 @@ de los estándares establecidos, de forma continua y a largo plazo, a través de
 una metodología que pueda utilizar tanto IDERA, como sus integrantes para
 autoevaluarse.
 
-En el Capítulo 1 del presente trabajo se plantea el problema de investigación y
+En el [Capítulo 1](1_problema.md) del presente trabajo se plantea el problema de investigación y
 los objetivos generales y específicos.
 
-A lo largo del Capítulo 2 se elabora un marco teórico, que incluye el desarrollo
+A lo largo del [Capítulo 2](2_marcoteorico.md) se elabora un marco teórico, que incluye el desarrollo
 de los principales conceptos utilizados.
 
-En el Capítulo 3 se desarrolla la metodología que se ha aplicado para la
+En el [Capítulo 3](3_metodologia.md) se desarrolla la metodología que se ha aplicado para la
 elaboración del presente trabajo.
 
-El Capítulo 4 consiste en un estado del arte acerca de distintas experiencias de
+El [Capítulo 4](4_estadodelarte.md) consiste en un estado del arte acerca de distintas experiencias de
 evaluación de IDE en el mundo.
 
-El Capítulo 5 trata sobre la evaluación de IDE de IDERA, sus antecedentes, los
+El [Capítulo 5](5_evaluaciondeide1.md) trata sobre la evaluación de IDE de IDERA, sus antecedentes, los
 rasgos básicos del funcionamiento de IDERA, el estudio previo de los nodos IDE,
 el surgimiento de la necesidad de evaluación, la primera versión de dicha
 evaluación, la identificación de oportunidades de mejora, el desarrollo de una

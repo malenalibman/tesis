@@ -52,8 +52,7 @@ IDERA y, además:
 ##### Figura 2 - Miniatura del Esquema de Evaluación
 
 ![](media/484359af17dc834ce83b3b523618d082.png)
-
-Fuente: elaboración propia en base a IDERA
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 Asimismo, también resulta de utilidad incorporar un cuadro de indicadores
 separados por tema (Figura 3), que incluya las fórmulas correspondientes, como
@@ -62,8 +61,7 @@ otro elemento que contribuya a facilitar y mejorar el análisis.
 ##### Figura 3 - Detalle de fórmula por temas
 
 ![](media/dd3f0b5d820992e4b37031b87a5cd034.png)
-
-Fuente: elaboración propia en base a IDERA
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 De esta forma, es posible visualizar mejor la sumatoria de los resultados de
 cada tema, según surge de los respectivos cuadros.
@@ -71,8 +69,7 @@ cada tema, según surge de los respectivos cuadros.
 ##### Figura 4 - Detalle de listado de opciones variables binarias
 
 ![](media/99b93e26a524f1db8f1e05a7740ece2f.png)
-
-Fuente: elaboración propia en base a IDERA.
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 Así, se propone un conjunto de fórmulas que permiten asignar el puntaje
 correspondiente en los indicadores cuyas respuestas posibles son “Sí” o “NO”
@@ -81,8 +78,7 @@ correspondiente en los indicadores cuyas respuestas posibles son “Sí” o “
 ##### Figura 5 - Ejemplo de fórmula para variables binarias
 
 ![](media/1cb65e10bd8a2a6f588933190a885dbf.png)
-
-Fuente: elaboración propia en base a IDERA
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 Del mismo modo, para las variables cuyos resultados se calculan en razón del
 porcentaje de capas que cumplen con la respectiva recomendación, es útil usar
@@ -93,8 +89,7 @@ fórmulas del tipo que se muestra en la siguiente figura (Figura 6).
 ![](media/ec23737bd63b912801ed72d07070bce3.png)
 
 ![](media/e8b46b49d1090f3bb1493eb24b2557aa.png)
-
-Fuente: elaboración propia en base a IDERA.
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 La solapa de DByF (Figura 7) permite seleccionar las capas que publica, como
 DByF, cada organismo y determinar si cumple o no con las condiciones requeridas,
@@ -104,8 +99,7 @@ indicador.
 ##### Figura 7 - Solapa de DByF de la Evaluación IDE v2
 
 ![](media/0833f4e668ab6b9c40cf5e2ca4a4066d.png)
-
-Fuente: elaboración propia en base a IDERA
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 ### El informe anual como un formulario
 
@@ -137,8 +131,7 @@ Google](https://www.google.com/intl/es-419_ar/forms/about/)
 ##### Figura 8 - Ejemplo de formulario de Google para informe anual
 
 ![](media/3331f15df1dcdba8a734f504e56e7b41.png)
-
-Fuente: elaboración propia en base a IDERA y Google.
+##### *Fuente: elaboración propia en base a IDERA y Google.* 
 
 ### La Base de Datos de IDERA
 
@@ -152,9 +145,8 @@ nodos que la componen.
 ##### Figura 9 - Base de datos de eSDI-Net+
 
 ![](media/541291e5e403bb99defb58558b00927e.png)
+##### *Fuente: [eSDI-Net+ Database of SDI](https://esdinetplus.eu/best_practice/database.html)*
 
-Fuente: [eSDI-Net+ Database of
-SDI](https://esdinetplus.eu/best_practice/database.html)
 
 Por otro lado, el uso de una base de datos permitirá mejorar la manera en que se
 actualiza la información, pudiendo inclusive generar algún tipo de formulario
@@ -169,8 +161,7 @@ relevar de las IDE (Figura 10).
 ##### Figura 10 - Ejemplo de modelo de entidad-relación de base de datos para IDERA
 
 ![](media/8456010a056345bb2e3227775c121d4b.png)
-
-Fuente: elaboración propia.
+##### *Fuente: elaboración propia*
 
 ### Herramienta de monitoreo de geoservicios: GeoHealthCheck
 
@@ -194,8 +185,7 @@ recursos.
 ##### Figura 11 - Interfaz de la demo de GeoHealthCheck
 
 ![](media/c6089046452b185467fbbb15c630a826.png)
-
-Fuente: [GeoHealthCheck](https://geohealthcheck.org/)
+##### *Fuente: [GeoHealthCheck](https://geohealthcheck.org/)*
 
 GeoHealthCheck posee un sencillo sistema de inicio de sesión para que los
 usuarios puedan crear sus propios chequeos (probes) en formato de plugins
@@ -210,5 +200,4 @@ documentation](https://docs.geohealthcheck.org/en/latest/plugins.html)
 ##### Figura 12 - Ejemplo de chequeo con GeoHealthCheck
 
 ![](media/27c1203cd4cb409fbba157d2cff9748c.jpg)
-
-Fuente: [GeoHealthCheck](https://geohealthcheck.org/)
+##### *Fuente: [GeoHealthCheck](https://geohealthcheck.org/)*

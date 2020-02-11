@@ -180,5 +180,3 @@ presente análisis crítico ha sido apuntalar y revitalizar su funcionamiento,
 atento a lo cual, y tomando como referencias las falencias detectadas, se ha
 elaborado una propuesta de mejoras para su implementación, pensadas como aportes
 que buscan contribuir al fortalecimiento de IDERA.
-
-https://geohealthcheck.org/)

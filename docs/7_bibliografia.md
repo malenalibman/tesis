@@ -111,160 +111,66 @@ Documentos de IDERA para la Evaluación de IDE
 Acta de Reunión de Equipo Coordinador de IDERA (9 De marzo de 2018), Buenos
 Aires. Mimeo.
 
-Adhesión a IDERA. Disponible en:
-
-<http://www.idera.gob.ar/index.php?option=com_content&view=article&id=200&Itemid=267>
-
+Adhesión a IDERA. Disponible en: <http://www.idera.gob.ar/index.php?option=com_content&view=article&id=200&Itemid=267> 
 consultado el 02/02/2020
 
-Buenas Prácticas en Metadatos. Disponible en:
+Buenas Prácticas en Metadatos. Disponible en: <https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Guia_de_Buenas_Practicas_de_Metadatos_V1_0.pdf> consultado el 02/02/2020
 
-<https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Guia_de_Buenas_Practicas_de_Metadatos_V1_0.pdf>
-
-consultado el 02/02/2020
-
-Configuración de Servicio WFS en GeoServer. Disponible en:
-
-<http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf>
-
-consultado el 02/02/2020
+Configuración de Servicio WFS en GeoServer. Disponible en: <http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf> consultado el 02/02/2020
 
 Contenidos mínimos para la presentación del informe anual de las IDE de máxima
 jerarquía. Mimeo.
 
 Contenido recomendado para el geoportal de una IDE de máxima jerarquía. Mimeo.
 
-Descripción de Datos Básicos y Fundamentales. Disponible en:
+Descripción de Datos Básicos y Fundamentales. Disponible en: <http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinDByF_V2.0_IDERA.pdf> consultado el 02/02/2020
 
-<http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinDByF_V2.0_IDERA.pdf>
-
-consultado el 02/02/2020
-
-Descripción del Catálogo de Objetos Geográficos. Disponible en:
-
-<http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinCatlogodeOG_V2.5_IDERA.pdf>
-
-consultado el 02/02/2020
+Descripción del Catálogo de Objetos Geográficos. Disponible en: <http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinCatlogodeOG_V2.5_IDERA.pdf> consultado el 02/02/2020
 
 Esquema de Evaluación de IDE. Mimeo.
 
-Instructivo de configuración de Servicio CSW en Geonetwork 3.X. Disponible en:
-
-<https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Instructivo_de_configuracion_de_Servicio_CSW_en_Geonetwork_3_x_v1_0.pdf>
-
-consultado el 02/02/2020
+Instructivo de configuración de Servicio CSW en Geonetwork 3.X. Disponible en: 
+<https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Instructivo_de_configuracion_de_Servicio_CSW_en_Geonetwork_3_x_v1_0.pdf> consultado el 02/02/2020
 
 Lineamientos para el acceso, difusión, uso e interoperabilidad de información
-geoespacial. Disponible en:
+geoespacial. Disponible en: <https://www.idera.gob.ar/images/descargas/Lineamientos_acceso_difusion_uso_e_interoperabilidad_IG_v1-0.pdf> consultado el 02/02/2020
 
-<https://www.idera.gob.ar/images/descargas/Lineamientos_acceso_difusion_uso_e_interoperabilidad_IG_v1-0.pdf>
+Normalización de Capas para Servicios OGC. Disponible en: <https://www.idera.gob.ar/images/stories/downloads/estandares/Normalizacin_de_capas_para_servicios_OGC.pdf> consultado el 02/02/2020
 
-consultado el 02/02/2020
+Perfil de Metadatos para Datos Vectoriales. Disponible en: <http://idera.gob.ar/images/stories/downloads/estandares/PMIDERA_Perfil_Metadatos_p_Datos_Vectoriales_IDERA_V2_0.pdf> consultado el 02/02/2020
 
-Normalización de Capas para Servicios OGC. Disponible en:
-
-<https://www.idera.gob.ar/images/stories/downloads/estandares/Normalizacin_de_capas_para_servicios_OGC.pdf>
-
-consultado el 02/02/2020
-
-Perfil de Metadatos para Datos Vectoriales. Disponible en:
-
-<http://idera.gob.ar/images/stories/downloads/estandares/PMIDERA_Perfil_Metadatos_p_Datos_Vectoriales_IDERA_V2_0.pdf>
-
-consultado el 02/02/2020
-
-Perfil de metadatos para servicios OGC. Disponible en:
-
-<https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-PMSIDERA-Perfil_de_Metadatos_para_Servicios_OGC_IDERA_V_1_0.pdf>
-
-consultado el 02/02/2020
+Perfil de metadatos para servicios OGC. Disponible en: <https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-PMSIDERA-Perfil_de_Metadatos_para_Servicios_OGC_IDERA_V_1_0.pdf> consultado el 02/02/2020
 
 Procedimiento para la evaluación de una IDE. Mimeo.
 
 Recomendaciones para la creación de un nodo IDE de máxima jerarquía. Disponible
-en:
+en: <https://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Recomendaciones_para_creacion_de_nodo_IDE.pdf> consultado el 02/02/2020
 
-<https://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Recomendaciones_para_creacion_de_nodo_IDE.pdf>
-
-consultado el 02/02/2020
-
-Recomendaciones para servicios Web de Mapas. Disponible en:
-
-<http://www.idera.gob.ar/images/stories/downloads/ide/IDERA-RecomendacionesparaServiciosWebdeMapasWMS_v1.2.pdf>
-
-consultado el 02/02/2020
+Recomendaciones para servicios Web de Mapas. Disponible en: <http://www.idera.gob.ar/images/stories/downloads/ide/IDERA-RecomendacionesparaServiciosWebdeMapasWMS_v1.2.pdf> consultado el 02/02/2020
 
 Recursos en línea
 -----------------
 
-ArcGIS Server. Disponible en:
+ArcGIS Server. Disponible en: <https://enterprise.arcgis.com/es/server/latest/get-started/windows/what-is-arcgis-for-server-.htm> consultado el 02/02/2020
 
-<https://enterprise.arcgis.com/es/server/latest/get-started/windows/what-is-arcgis-for-server-.htm>
+ckan - The open source data portal software. Disponible en: <https://ckan.org/> consultado el 02/02/2020
 
-consultado el 02/02/2020
+eSDI-NET+ - BBDD. Disponible en: <https://esdinetplus.eu/best_practice/database.html> consultado el 02/02/2020
 
-ckan - The open source data portal software. Disponible en:
+Formularios de Google. Disponible en: <https://www.google.com/intl/es-419_ar/forms/about/> consultado el 02/02/2020
 
-<https://ckan.org/>
+GeoHealthCheck. Disponible en:<https://geohealthcheck.org/> consultado el 02/02/2020
 
-consultado el 02/02/2020
+GeoHealthCheck - Documentación sobre Plugins. Disponible en: <https://docs.geohealthcheck.org/en/latest/plugins.html> consultado el 02/02/2020
 
-eSDI-NET+ - BBDD. Disponible en:
+IDERA - ¿Qué es IDERA? Disponible en: [https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203\#](https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203) consultado el 02/02/2020
 
-<https://esdinetplus.eu/best_practice/database.html>
+ISO - TC211 Committee. Disponible en: <https://committee.iso.org/home/tc211> consultado el 02/02/2020
 
-consultado el 02/02/2020
+Geoserver. Disponible en: <http://geoserver.org/> consultado el 02/02/2020
 
-Formularios de Google. Disponible en:
+Junar Data Platform. Disponible en: <https://www.junar.com/> consultado el 02/02/2020
 
-<https://www.google.com/intl/es-419_ar/forms/about/>
+Mapserver. Disponible en: <https://mapserver.org/> consultado el 02/02/2020
 
-consultado el 02/02/2020
-
-GeoHealthCheck. Disponible en:
-
-<https://geohealthcheck.org/>
-
-consultado el 02/02/2020
-
-GeoHealthCheck - Documentación sobre Plugins. Disponible en:
-
-<https://docs.geohealthcheck.org/en/latest/plugins.html>
-
-consultado el 02/02/2020
-
-IDERA - ¿Qué es IDERA? Disponible en:
-
-[https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203\#](https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203)
-
-consultado el 02/02/2020
-
-ISO - TC211 Committee. Disponible en:
-
-<https://committee.iso.org/home/tc211>
-
-consultado el 02/02/2020
-
-Geoserver. Disponible en:
-
-<http://geoserver.org/>
-
-consultado el 02/02/2020
-
-Junar Data Platform. Disponible en:
-
-<https://www.junar.com/>
-
-consultado el 02/02/2020
-
-Mapserver. Disponible en:
-
-<https://mapserver.org/>
-
-consultado el 02/02/2020
-
-The Open Geospatial Consortium. Disponible en:
-
-<https://www.opengeospatial.org/>
-
-consultado el 02/02/2020
+The Open Geospatial Consortium. Disponible en: <https://www.opengeospatial.org/> consultado el 02/02/2020

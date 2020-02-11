@@ -14,7 +14,8 @@ acceso de la información producida por el Estado y diversos actores, y al apoyo
 en la toma de decisiones en las diferentes actividades de los ámbitos público,
 privado, académico, no gubernamental y sociedad civil[^1].
 
-[^1]: [IDERA - ¿Qué es IDERA?] (https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203)
+[^1]: [IDERA - ¿Qué es IDERA?](https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203)
+
 En tal sentido, cabe considerar a la Información Geográfica como un bien público
 y, por tanto, a su acceso y uso como un servicio público.
 
@@ -90,9 +91,7 @@ universidades.
 ##### Gráfico 1 - Cantidad de Nodos IDE por jurisdicción
 
 ![](media/c79926a1bd3231944aea79168f33a919.png)
-
-> Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-> Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 En 2017 (Gráfico 2) la mayoría de las provincias relevadas se encontraban
 representadas por 1 o 2 nodos IDE, pero las provincias de Misiones, Neuquén y
@@ -104,9 +103,7 @@ información.
 ##### Gráfico 2 - Cantidad de Nodos por provincia
 
 ![](media/2ee5d0ba4a4676b9519f136798785574.png)
-
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 Tal como se observa en el Gráfico 3, poco más de un tercio de los organismos
 relevados poseían un catálogo de metadatos que permitiese el descubrimiento de
@@ -116,9 +113,7 @@ implementado, a pesar de ser una herramienta esencial dentro de una IDE.
 ##### Gráfico 3 - Cantidad de nodos por disponibilidad de Catálogo de Metadatos
 
 ![](media/0e082611d54467f85129c3b88ff3911f.png)
-
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 Del análisis de la disponibilidad de geoservicios de visualización de capas
 (WMS) que vemos en el Gráfico 4, se advierte que todavía existían muchas IDE que
@@ -132,16 +127,12 @@ se encontraba disponible este servicio.
 ##### Gráfico 4 - Cantidad de nodos por disponibilidad de Servicio de visualización de WMS
 
 ![](media/7cbdcace9fea568eef557e389495c45b.png)
-
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 ##### Gráfico 5 - Cantidad de nodos por disponibilidad de Servicio de descarga de capas WFS
 
 ![](media/e6b169dc72bd769666a14041a30f55a8.png)
-
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 Un tema de gran importancia en la comunidad de IDERA es lograr que las
 implementaciones IDE sean lo más sustentables posibles, para ello se recomienda
@@ -157,14 +148,10 @@ Server[^5].
 
 [^5]: [ArcGIS Server](https://enterprise.arcgis.com/es/server/latest/get-started/windows/what-is-arcgis-for-server-.htm)
 
-
-
 ##### Gráfico 6 - Cantidad de nodos por tipo de Software de visualización de WMS
 
 ![](media/5d6f8c0a2a9246e7ab066f00e5f98702.png)
-
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 En el análisis de la estandarización de la publicación de la información,
 resulta relevante que las herramientas implementadas para dicha tarea se
@@ -178,9 +165,7 @@ que los hace difícil de identificar y distinguir.
 ##### Gráfico 7 - Cantidad de nodos por personalización de los Metadatos de Servicio WMS
 
 ![](media/ea6282775ce6d88992ffa683ca8a1e4f.png)
-
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 Como parte de las tareas dirigidas a facilitar el descubrimiento y el acceso a
 la información publicada por sus integrantes, IDERA realizó en 2016 la
@@ -198,9 +183,7 @@ vemos en el Gráfico 8.
 ##### Gráfico 8 - Errores en la cosecha de geoservicios por tipo de fuente de datos
 
 ![](media/f66ad6e74facc8b4de3da496ce0b87bb.png)
-
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
 ### Del seguimiento de nodos a la necesidad de su evaluación
 
@@ -248,5 +231,3 @@ Desde IDERA eso permite destacar a quienes generen implementaciones
 estandarizadas e interoperables acordes con sus recomendaciones y, en el otro
 extremo de la escala de valoración, identificar las experiencias que requieren
 un mayor esfuerzo en pos de transformar sus debilidades en fortalezas.
-
-https://geohealthcheck.org/)

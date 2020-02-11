@@ -15,8 +15,7 @@ distintas perspectivas que se pueden tener sobre una IDE.
 ##### Figura 1 - Marco de evaluación multicriterio de IDE
 
 ![Figura 1. Marco de evaluación multicriterio de IDE](media/f74c3f4765996d7e215a61fa216693bb.png)
-
-Fuente: elaboración propia en base a Grus, Crompvoets y Bregt (2007).
+##### *Fuente: elaboración propia en base a Grus, Crompvoets y Bregt (2007).*
 
 En particular, en el presente estado del arte, se han tomado en cuenta las
 experiencias de la Infraestructura para la Información Espacial en Europa
