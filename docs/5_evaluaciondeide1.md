@@ -91,8 +91,8 @@ universidades.
 
 ![](media/c79926a1bd3231944aea79168f33a919.png)
 
-Fuente: elaboración propia en base al relevamiento realizado por el Instituto
-Geográfico Nacional
+> Fuente: elaboración propia en base al relevamiento realizado por el Instituto
+> Geográfico Nacional
 
 En 2017 (Gráfico 2) la mayoría de las provincias relevadas se encontraban
 representadas por 1 o 2 nodos IDE, pero las provincias de Misiones, Neuquén y
@@ -156,6 +156,9 @@ Server[^5].
 [^4]: [MapServer](https://mapserver.org/)
 
 [^5]: [ArcGIS Server](https://enterprise.arcgis.com/es/server/latest/get-started/windows/what-is-arcgis-for-server-.htm)
+
+
+
 ##### Gráfico 6 - Cantidad de nodos por tipo de Software de visualización de WMS
 
 ![](media/5d6f8c0a2a9246e7ab066f00e5f98702.png)
