@@ -1,9 +1,8 @@
-path: media/
-source: tesis.pdf
+
 
 ## Descarga
 
-<a href="media/tesis.pdf" target="_blank">Trabajo final de Carrera :fa-external-link:</a>
+<a href="https://github.com/malenalibman/tesis/raw/master/docs/media/tesis.pdf" target="_blank">Trabajo final de Carrera :fa-external-link:</a>
 
 <a href="https://docs.google.com/spreadsheets/d/1a9q0ncHGxq6-kiq9kcYZL6sk_VPYgZ4NFtkoa1sor08/edit?usp=sharing" target="_blank">Esquema de evaluación de IDERA v2 :fa-external-link:</a>
 

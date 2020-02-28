@@ -24,7 +24,7 @@ nav:
       - Propuesta de mejoras: 5_evaluaciondeide4.md
       - Sugerencias para la implementación: 5_evaluaciondeide5.md
 
-  - "": media/tesis.docx
+  - "": media/tesis.pdf
   
 markdown_extensions:
      - fontawesome_markdown  
