@@ -101,6 +101,11 @@ Vandenbroucke, D.; Dessers, E.; Crompvoets, J.; Bregt, A. y Van Orshoven, J.
 in the context of work processes. Journal of Computers, Environment and Urban
 Systems Nº 38, pp. 58 - 66.
 
+Van Praag, E. y Borrero, S. (2012): El programa Geosur: Contribución efectiva 
+para el desarrollo de las IDE en América Latina. En Bernabé Poveda, M. y López 
+Vázquez, C. (eds.) (2012): Fundamentos de las Infraestructuras de Datos Espaciales. 
+UPM. Madrid.
+
 Zwirowicz-Rutkowska, A. (2017): A multi-criteria method for assessment of
 spatial data infrastructure effectiveness. Earth Sci Inform Nº 10, pp. 369 -
 382.
@@ -174,3 +179,15 @@ Junar Data Platform. Disponible en: <https://www.junar.com/> consultado el 02/02
 Mapserver. Disponible en: <https://mapserver.org/> consultado el 02/02/2020
 
 The Open Geospatial Consortium. Disponible en: <https://www.opengeospatial.org/> consultado el 02/02/2020
+
+
+Normativa
+-----------------
+
+Ley Nº 27.275 Derecho de acceso a la información pública
+
+Decreto Nº 1.839/13 de la provincia de Río Negro
+
+Decreto Nº 1.846/13 de la provincia de Río Negro
+
+Decreto N° 7.372/12 de la provincia de San Luis 

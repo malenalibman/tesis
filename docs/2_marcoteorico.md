@@ -48,10 +48,10 @@ Abad Power, Bernabé Poveda y Rodríguez Pascual (2012: 42) las definen como: �
 infraestructura que permita compartir, intercambiar, combinar, analizar y
 acceder a los datos geográficos de forma estándar e interoperable”.
 
-Para permitir esa serie de acciones, una IDE está conformada por los siguientes
-elementos: datos geográficos, servicios Interoperables y acuerdos. Generados a
-partir de su estructura, compuesta por: datos y sus metadatos, actores,
-tecnología, acuerdos políticos, normas y servicios.
+Para permitir esa serie de acciones, una IDE está conformada por los siguientes 
+elementos: datos geográficos, servicios Interoperables y acuerdos. Estos elementos 
+son generados a partir de su estructura, compuesta por: datos y sus metadatos, 
+actores, tecnología, acuerdos políticos, normas y servicios. 
 
 Es importante remarcar que el trabajo de la IDE no se apoya únicamente en
 publicar (más que en compartir) la información geográfica, sino en la
@@ -80,11 +80,14 @@ Geográfica (SIG) de escritorio (como puede ser QGIS) y el Catálogo de Metadato
 información geográfica publicada de manera que se pueda descubrir y acceder a
 ella.
 
-Todas estas acciones, se canalizan a través de tecnologías ajustadas a los
-estándares del Open Geospatial Consortium (OGC). Esto permite que cualquiera de
-las acciones definidas se pueda ejecutar en cualquier formato, lugar e idioma,
-hecho que se refuerza a través de la implementación de dichos estándares en la
-IDE nacional como uno de sus principales acuerdos.
+Todas estas acciones, se canalizan a través de tecnologías ajustadas a los 
+estándares del Open Geospatial Consortium (OGC), consorcio de empresas, agencias 
+gubernamentales, instituciones de investigación y universidades, a cargo de crear 
+las normas y estándares de tecnologías para la democratización de la información 
+geográfica. Esto permite que cualquiera de las acciones definidas se pueda ejecutar 
+en cualquier formato, lugar e idioma, hecho que se refuerza a través de la 
+implementación de dichos estándares en la IDE nacional como uno de sus principales 
+acuerdos.
 
 Incluso publicaciones centradas SIG reconocen que ya no es posible hablar de SIG
 sin hablar de IDE. Así, Luaces, Olaya y Fonts (2014: 745), afirman que: “Las
@@ -132,14 +135,11 @@ general, se trata de la capacidad que posee una organización o un sistema para
 trabajar en forma conjunta con otras organizaciones o sistemas que existan
 actualmente o que se vayan a crear.
 
-En términos más específicos, OGC, consorcio de empresas, agencias
-gubernamentales, instituciones de investigación y universidades, a cargo de
-crear las normas y estándares de tecnologías para la democratización de la
-información geográfica, entiende la interoperabilidad como el trabajo
-desarrollado en forma recíproca entre distintas aplicaciones informáticas que
-permite prescindir de penosas tareas de conversión, importaciones y
-exportaciones de datos y otras barreras de acceso a los recursos distribuidos
-impuestas por la diversidad de entornos de procesamiento[^1].
+En términos más específicos, OGC, entiende la interoperabilidad como el trabajo 
+desarrollado en forma recíproca entre distintas aplicaciones informáticas que 
+permite prescindir de penosas tareas de conversión, importaciones y exportaciones 
+de datos y otras barreras de acceso a los recursos distribuidos impuestas por la 
+diversidad de entornos de procesamiento[^1].
 
 [^1]: [The Open Geospatial Consortium \| OGC](https://www.opengeospatial.org/)
 

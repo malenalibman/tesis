@@ -1,7 +1,7 @@
 Introducción
 ============
 
-Este trabajo pretende analizar la metodología de evaluación de Infraestructuras
+Este trabajo pretende analizar la evaluación de Infraestructuras
 de Datos Espaciales (IDE) diseñada por la Infraestructura de Datos Espaciales de
 la República Argentina (IDERA), dar cuenta de sus inconvenientes de
 implementación y señalar las mejoras que se podrían introducir para contribuir a

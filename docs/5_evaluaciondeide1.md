@@ -16,8 +16,9 @@ privado, académico, no gubernamental y sociedad civil[^1].
 
 [^1]: [IDERA - ¿Qué es IDERA?](https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203)
 
-En tal sentido, cabe considerar a la Información Geográfica como un bien público
-y, por tanto, a su acceso y uso como un servicio público.
+En tal sentido, cabe considerar a la Información Geográfica como un bien público y, 
+por tanto, a su acceso y uso como un servicio público, en línea con lo establecido 
+por la Ley Nº 27.275 Derecho de Acceso a la Información Pública.
 
 En términos organizacionales, según el reglamento de funcionamiento publicado en
 IDERA (2015), la Coordinación Ejecutiva de IDERA está a cargo del Instituto
@@ -134,13 +135,12 @@ se encontraba disponible este servicio.
 ![](media/e6b169dc72bd769666a14041a30f55a8.png)
 ##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
-Un tema de gran importancia en la comunidad de IDERA es lograr que las
-implementaciones IDE sean lo más sustentables posibles, para ello se recomienda
-el uso de software libre y de código abierto. Así, se observa en el Gráfico 6
-que la gran mayoría de los organismos eligían dos de las más populares
-herramientas de servidores de mapas de este tipo como son Geoserver[^3] y
-MapServer[^4], aunque algunos organismos aún usaban programas pagos, como ArcGIS
-Server[^5].
+Un tema de gran importancia en la comunidad de IDERA es lograr que las 
+implementaciones IDE sean lo más sustentables posibles, para ello se recomienda 
+el uso de software libre y de código abierto. Así, se observa en el Gráfico 6 
+que la gran mayoría de los organismos elegían dos de las más populares herramientas 
+de servidores de mapas de este tipo como son Geoserver[^3] y MapServer[^4], 
+aunque algunos organismos aún usaban programas pagos, como ArcGIS Server[^5].
 
 [^3]: [GeoServer](http://geoserver.org/)
 
@@ -167,18 +167,19 @@ que los hace difícil de identificar y distinguir.
 ![](media/ea6282775ce6d88992ffa683ca8a1e4f.png)
 ##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*
 
-Como parte de las tareas dirigidas a facilitar el descubrimiento y el acceso a
-la información publicada por sus integrantes, IDERA realizó en 2016 la
-instalación de un catálogo de metadatos propio con el software Geonetwork. Desde
-el mismo es posible “cosechar” la información publicada a través de los
-geoservicios, a fin de que sea más fácil encontrarla para los usuarios, entre
-otros beneficios. En esta tarea es que se cosecharon los geoservicios de
-visualización WMS y de metadatos CSW de los organismos que los tienen
-disponibles. De esta manera, además de poder crear registros de metadatos para
-todas las capas existentes, aún si el nodo IDE no tiene su propio servicio de
-catálogo, se encontró que muchos servicios, en particular los WMS, tenían
-problemas de funcionamiento, lo que imposibilitaba su uso frecuentemente, como
-vemos en el Gráfico 8.
+Como parte de las tareas dirigidas a facilitar el descubrimiento y el acceso a 
+la información publicada por sus integrantes, IDERA realizó en 2016 la 
+instalación de un catálogo de metadatos propio con el software Geonetwork. Desde 
+el mismo es posible “cosechar” la información publicada a través de los 
+geoservicios de cada uno de los organismos, a fin de que sea más fácil encontrarla 
+para los usuarios, entre otros beneficios. En esta tarea es que se cosecharon los 
+geoservicios de visualización WMS y de metadatos CSW de los organismos que los 
+tienen disponibles. De esta manera, no solo se crean registros de metadatos para 
+los nodos IDE con catálogo de metadatos propio, sino que se usa el servicio WMS a 
+fin de poder registrar todas las capas existentes. Pero se encontró que muchos 
+servicios, en particular los WMS, tenían problemas de funcionamiento (por ejemplo, 
+inestabilidad en los servidores lo que genera que la cosecha de Geonetwork dé error) 
+que imposibilitaba su uso frecuentemente, como vemos en el Gráfico 8.
 
 ##### Gráfico 8 - Errores en la cosecha de geoservicios por tipo de fuente de datos
 

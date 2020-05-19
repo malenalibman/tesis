@@ -60,13 +60,13 @@ periódica sobre su funcionamiento.
 
 A su vez, hasta el momento no se implementó la evaluación, ya que es posible que
 dicha implementación haya resultado una carga excesiva para la Coordinación
-Ejecutiva de IDERA en los últimos años. Ello es visible en el hecho de que la
-Evaluación de IDE ha implicado un esfuerzo desmedido para la Coordinación
-Ejecutiva de IDERA, dado que para funcionar adecuadamente requiere de cierta
-masa crítica de personal calificado y dedicado a esta tarea, en un contexto de
-achicamiento del Estado y de restricciones para la contratación de personal,
-sumado a un consenso de los actores, que, si bien teóricamente se tiene, no se
-termina de concretar en la práctica.
+Ejecutiva de IDERA en los últimos años. Ello es visible en el hecho de que la 
+Evaluación de IDE implica un esfuerzo desmedido para la Coordinación Ejecutiva de 
+IDERA, dado que en la práctica, la experiencia recorrida muestra que para funcionar 
+adecuadamente requiere de cierta masa crítica de personal calificado y dedicado a 
+esta tarea, en un contexto de achicamiento del Estado y de restricciones para la 
+contratación de personal, sumado a un consenso de los actores, que, si bien 
+teóricamente se tiene, no se termina de concretar.
 
 Además, el esquema generado de variables e indicadores no ha resultado homogéneo
 en términos de su simplicidad y economía de recursos para el relevamiento de los
@@ -113,14 +113,22 @@ pero luego no les es posible perdurar en el tiempo, ya sea por la escasez de
 recursos económicos, por la movilidad del principal recurso humano que las lleva
 adelante, o por la pérdida de apoyo político.
 
-Así, los ciclos de vida de las IDE, al depender de los apoyos políticos, de los
-recursos humanos y de la situación fiscal y macroeconómica, hacen que presenten
-muchas fluctuaciones en el tiempo, tanto ante cambios en el signo político del
-gobierno, como frente a modificaciones en los equilibrios internos entre los
-distintos grupos que integran una coalición gobernante. En algunos casos se
-comprobó que la existencia de una norma de creación de la IDE no garantiza su
-sostenibilidad a lo largo del tiempo, inclusive en el marco de una misma gestión
-de gobierno, lo cual tampoco asegura su operatividad.
+Así, los ciclos de vida de las IDE, al depender de los apoyos políticos, de los 
+recursos humanos y de la situación fiscal y macroeconómica, hacen que presenten 
+muchas fluctuaciones en el tiempo, tanto ante cambios en el signo político del 
+gobierno, como frente a modificaciones en los equilibrios internos entre los 
+distintos grupos que integran una coalición gobernante. Ejemplos de esto lo 
+constituyen la IDE de la provincia de Río Negro, creada a través de los 
+Decretos N° 1839 y 1846 del año 2013, que debido a un quiebre en la coalición 
+interna de gobierno, dejó de funcionar en el año 2015 y hasta la fecha no registra 
+nueva actividad. Algo similar ocurre con la IDE de la provincia de San Luis, 
+creada a través del Decreto N° 7372 del año 2012, que en el año 2017, debido a 
+modificaciones en la conformación del gabinete del gobierno provincial, quedó sin 
+funcionamiento. Con lo cual puede pensarse que si bien la existencia de normativa 
+de creación de una IDE es un requisito necesario para su funcionamiento y 
+legitimación, no necesariamente garantiza su sostenibilidad a lo largo del tiempo, 
+inclusive en el marco de una misma gestión de gobierno, lo cual tampoco asegura su 
+operatividad.
 
 Todas estas cuestiones no son, actualmente, captadas en forma adecuada por los
 indicadores y el procedimiento establecidos para la Evaluación de IDE. Ya que no

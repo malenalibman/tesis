@@ -235,13 +235,13 @@ Para el tema de **Información Geoespacial** se considera:
     los DByF con el catálogo.
 
 -   Agregar, en el indicador de la categoría de Datos Temáticos, la posibilidad
-    de que el dato no exista en el catálogo de objetos geográficos, pero esté
+    de que el dato no exista en el catálogo de objetos geográficos de IDERA, pero esté
     catalogado en un catálogo propio o esté adaptado para su interoperabilidad,
     dado que no todas las IDE utilizan estrictamente el catálogo de objetos de
     IDERA.
 
 -   Reescribir, en cuanto al linaje, la metodología de evaluación, aclarando los
-    elementos necesarios.
+    elementos necesarios (origen y metodología de producción de los datos).
 
 Para el tema de **Metadatos** resulta conveniente:
 
@@ -297,7 +297,7 @@ categorías e indicadores del tema “información geoespacial”.
 | WFS                               | Funcionamiento                                               | [Configuración   de Servicio WFS en GeoServer](http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf) | Que funcione  correctamente la visualización y descarga. Que funcionen las dos operaciones  básicas GetFeature y DescribeFeatureType |               60%                |         35%          |               |
 | WFS'                              | Difusión                                                     | [Configuración   de Servicio WFS en GeoServer](http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf)  <br />[Lineamientos   para el acceso, difusión, uso e interoperabilidad de información geoespacial](https://www.idera.gob.ar/images/descargas/Lineamientos_acceso_difusion_uso_e_interoperabilidad_IG_v1-0.pdf) | La URL del  geoservicio debe estar publicada en el geoportal. La licencia de uso tiene  que estar explicitada en el resumen del GetCapabilities, o en el metadato del  servicio Web o en cada capa que integre el WFS |               40%                |                      |               |
 | CSW                               | Todas las  capas                                             | [Instructivo   de configuración de Servicio CSW en Geonetwork 3.X](https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Instructivo_de_configuracion_de_Servicio_CSW_en_Geonetwork_3_x_v1_0.pdf) | Evaluar  cantidad de capas visibles en el visualizador y cantidad de capas con  metadato en el catálogo. Es posible consultar los registros completos en XML  y luego compararlo con la lista de capas obtenida de la misma forma desde el  WMS |               100%               |         20%          |               |
-| Datos Abiertos  o Descarga Masiva | Todas las  capas                                             | FALTA                                                        | Link al  servicio WFS publicado  <br />Descarga de  archivos individuales<br />Descarga  masiva de archivos<br />Licencia  especificada en el recurso | 25%  <br />25%<br />25%<br />25% |         10%          |               |
+| Datos Abiertos  o Descarga Masiva | Todas las  capas                                             | PENDIENTE                                                        | Link al  servicio WFS publicado  <br />Descarga de  archivos individuales<br />Descarga  masiva de archivos<br />Licencia  especificada en el recurso | 25%  <br />25%<br />25%<br />25% |         10%          |               |
 
 
 
@@ -320,7 +320,7 @@ categorías e indicadores del tema “información geoespacial”.
 | ------------- | ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- | -------------------- | ------------- |
 | Contenido     | Responsable                                             | [Perfil   de Metadatos para Datos Vectoriales](http://idera.gob.ar/images/stories/downloads/estandares/PMIDERA_Perfil_Metadatos_p_Datos_Vectoriales_IDERA_V2_0.pdf) | Verificar el  responsable del dato y el generador de metadato | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 30%                  | 30%           |
 | Contenido'    | Metadatos del  Servicio en Catálogo de metadatos        | [Perfil   de metadatos para servicios OGC](https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-PMSIDERA-Perfil_de_Metadatos_para_Servicios_OGC_IDERA_V_1_0.pdf) | Metadato  creado y con elementos obligatorios completos, no por defecto | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 20%                  |               |
-| Contenido''   | Título  coincidente con geoservicio y Catálogo de datos | FALTA                                                        | Verificar  título en WMS, WFS, CSW y Catálogo de objetos     | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 20%                  |               |
+| Contenido''   | Título  coincidente con geoservicio y Catálogo de datos | PENDIENTE                                                        | Verificar  título en WMS, WFS, CSW y Catálogo de objetos     | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 20%                  |               |
 | Contenido'''  | Link al  Recurso                                        | [Buenas   Prácticas en Metadatos](https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Guia_de_Buenas_Practicas_de_Metadatos_V1_0.pdf) | Comprobar que  en el metadato exista un link que permita el acceso al recurso (WMS / WFS,  *.shp, etc.) | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 30%                  |               |
 
 ##### *Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional*

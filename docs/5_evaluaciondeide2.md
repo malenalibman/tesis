@@ -59,18 +59,21 @@ otorga mayor grado de institucionalidad y formalidad, lo cual puede contribuir a
 mayores facilidades para obtener y sostener los recursos necesarios para el
 funcionamiento de una IDE.
 
-Por último, se analiza si la estructura de la IDE cumple con las recomendaciones
-sobre el trabajo descentralizado. En particular, se busca asegurar que la
-coordinación de cada IDE no concentre la información de todas las áreas de la
-jurisdicción, sino que cada una tenga el reconocimiento correspondiente por los
-datos o la responsabilidad de publicarlos como nodo. Dado que ello implica
-señalar con precisión quién es legalmente responsable de la información
-publicada y de su veracidad y, además, permite evitar que la centralización de
-la información lleve a su veloz desactualización por falta de una comunicación
-fluida entre los distintos actores que la generan. Una de las características de
-una IDE es justamente la facilidad de contar con herramientas que permiten la
-actualización sencilla y permanente de la información publicada por parte de sus
-productores.
+Por último, se analiza si la estructura de la IDE cumple con las recomendaciones 
+sobre el trabajo descentralizado. En particular, se busca asegurar que la 
+coordinación de cada IDE no concentre la información de todas las áreas de la 
+jurisdicción, sino que cada una tenga el reconocimiento correspondiente por los 
+datos o la responsabilidad de publicarlos como nodo. Dado que ello implica 
+señalar con precisión quién es legalmente responsable de la información publicada 
+y de su veracidad y, además favorece el mantenimiento de los datos a partir del 
+compromiso de quienes integran la IDE, tal como describen van Praag y Borrero 
+(2012). Una de las características de una IDE es justamente la facilidad de contar 
+con herramientas que permiten la actualización sencilla y permanente de la 
+información publicada por parte de sus productores. En el año 2017, en el momento 
+de diseño de la evaluación de IDE de IDERA algunas IDE tenían información 
+desactualizada debido a que centralizaban la publicación a través de la entrega 
+de capas por parte de los productores, como en el caso de la IDE de la provincia 
+de Santa Fe.
 
 **Publicación y Geoservicios (30%):** considera cómo está publicada la
 información geográfica y si dicha publicación resulta utilizable para los

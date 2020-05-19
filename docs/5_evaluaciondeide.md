@@ -15,8 +15,9 @@ en la toma de decisiones en las diferentes actividades de los ámbitos público,
 privado, académico, no gubernamental y sociedad civil[^1].
 
 [^1]: [IDERA - ¿Qué es IDERA?] (https://www.idera.gob.ar/index.php?option=com_content&view=article&id=274&Itemid=203)
-En tal sentido, cabe considerar a la Información Geográfica como un bien público
-y, por tanto, a su acceso y uso como un servicio público.
+En tal sentido, cabe considerar a la Información Geográfica como un bien público y, 
+por tanto, a su acceso y uso como un servicio público, en línea con lo establecido 
+por la Ley Nº 27.275 Derecho de Acceso a la Información Pública.
 
 En términos organizacionales, según el reglamento de funcionamiento publicado en
 IDERA (2015), la Coordinación Ejecutiva de IDERA está a cargo del Instituto
@@ -143,13 +144,12 @@ Geográfico Nacional
 Fuente: elaboración propia en base al relevamiento realizado por el Instituto
 Geográfico Nacional
 
-Un tema de gran importancia en la comunidad de IDERA es lograr que las
-implementaciones IDE sean lo más sustentables posibles, para ello se recomienda
-el uso de software libre y de código abierto. Así, se observa en el Gráfico 6
-que la gran mayoría de los organismos eligían dos de las más populares
-herramientas de servidores de mapas de este tipo como son Geoserver[^3] y
-MapServer[^4], aunque algunos organismos aún usaban programas pagos, como ArcGIS
-Server[^5].
+Un tema de gran importancia en la comunidad de IDERA es lograr que las 
+implementaciones IDE sean lo más sustentables posibles, para ello se recomienda 
+el uso de software libre y de código abierto. Así, se observa en el Gráfico 6 
+que la gran mayoría de los organismos elegían dos de las más populares herramientas 
+de servidores de mapas de este tipo como son Geoserver[^3] y MapServer[^4], 
+aunque algunos organismos aún usaban programas pagos, como ArcGIS Server[^5].
 
 [^3]: [GeoServer](http://geoserver.org/)
 
@@ -179,18 +179,19 @@ que los hace difícil de identificar y distinguir.
 Fuente: elaboración propia en base al relevamiento realizado por el Instituto
 Geográfico Nacional
 
-Como parte de las tareas dirigidas a facilitar el descubrimiento y el acceso a
-la información publicada por sus integrantes, IDERA realizó en 2016 la
-instalación de un catálogo de metadatos propio con el software Geonetwork. Desde
-el mismo es posible “cosechar” la información publicada a través de los
-geoservicios, a fin de que sea más fácil encontrarla para los usuarios, entre
-otros beneficios. En esta tarea es que se cosecharon los geoservicios de
-visualización WMS y de metadatos CSW de los organismos que los tienen
-disponibles. De esta manera, además de poder crear registros de metadatos para
-todas las capas existentes, aún si el nodo IDE no tiene su propio servicio de
-catálogo, se encontró que muchos servicios, en particular los WMS, tenían
-problemas de funcionamiento, lo que imposibilitaba su uso frecuentemente, como
-vemos en el Gráfico 8.
+Como parte de las tareas dirigidas a facilitar el descubrimiento y el acceso a 
+la información publicada por sus integrantes, IDERA realizó en 2016 la 
+instalación de un catálogo de metadatos propio con el software Geonetwork. Desde 
+el mismo es posible “cosechar” la información publicada a través de los 
+geoservicios de cada uno de los organismos, a fin de que sea más fácil encontrarla 
+para los usuarios, entre otros beneficios. En esta tarea es que se cosecharon los 
+geoservicios de visualización WMS y de metadatos CSW de los organismos que los 
+tienen disponibles. De esta manera, no solo se crean registros de metadatos para 
+los nodos IDE con catálogo de metadatos propio, sino que se usa el servicio WMS a 
+fin de poder registrar todas las capas existentes. Pero se encontró que muchos 
+servicios, en particular los WMS, tenían problemas de funcionamiento (por ejemplo, 
+inestabilidad en los servidores lo que genera que la cosecha de Geonetwork dé error) 
+que imposibilitaba su uso frecuentemente, como vemos en el Gráfico 8.
 
 ##### Gráfico 8 - Errores en la cosecha de geoservicios por tipo de fuente de datos
 
@@ -304,18 +305,21 @@ otorga mayor grado de institucionalidad y formalidad, lo cual puede contribuir a
 mayores facilidades para obtener y sostener los recursos necesarios para el
 funcionamiento de una IDE.
 
-Por último, se analiza si la estructura de la IDE cumple con las recomendaciones
-sobre el trabajo descentralizado. En particular, se busca asegurar que la
-coordinación de cada IDE no concentre la información de todas las áreas de la
-jurisdicción, sino que cada una tenga el reconocimiento correspondiente por los
-datos o la responsabilidad de publicarlos como nodo. Dado que ello implica
-señalar con precisión quién es legalmente responsable de la información
-publicada y de su veracidad y, además, permite evitar que la centralización de
-la información lleve a su veloz desactualización por falta de una comunicación
-fluida entre los distintos actores que la generan. Una de las características de
-una IDE es justamente la facilidad de contar con herramientas que permiten la
-actualización sencilla y permanente de la información publicada por parte de sus
-productores.
+Por último, se analiza si la estructura de la IDE cumple con las recomendaciones 
+sobre el trabajo descentralizado. En particular, se busca asegurar que la 
+coordinación de cada IDE no concentre la información de todas las áreas de la 
+jurisdicción, sino que cada una tenga el reconocimiento correspondiente por los 
+datos o la responsabilidad de publicarlos como nodo. Dado que ello implica 
+señalar con precisión quién es legalmente responsable de la información publicada 
+y de su veracidad y, además favorece el mantenimiento de los datos a partir del 
+compromiso de quienes integran la IDE, tal como describen van Praag y Borrero 
+(2012). Una de las características de una IDE es justamente la facilidad de contar 
+con herramientas que permiten la actualización sencilla y permanente de la 
+información publicada por parte de sus productores. En el año 2017, en el momento 
+de diseño de la evaluación de IDE de IDERA algunas IDE tenían información 
+desactualizada debido a que centralizaban la publicación a través de la entrega 
+de capas por parte de los productores, como en el caso de la IDE de la provincia 
+de Santa Fe.
 
 **Publicación y Geoservicios (30%):** considera cómo está publicada la
 información geográfica y si dicha publicación resulta utilizable para los
@@ -687,13 +691,13 @@ periódica sobre su funcionamiento.
 
 A su vez, hasta el momento no se implementó la evaluación, ya que es posible que
 dicha implementación haya resultado una carga excesiva para la Coordinación
-Ejecutiva de IDERA en los últimos años. Ello es visible en el hecho de que la
-Evaluación de IDE ha implicado un esfuerzo desmedido para la Coordinación
-Ejecutiva de IDERA, dado que para funcionar adecuadamente requiere de cierta
-masa crítica de personal calificado y dedicado a esta tarea, en un contexto de
-achicamiento del Estado y de restricciones para la contratación de personal,
-sumado a un consenso de los actores, que, si bien teóricamente se tiene, no se
-termina de concretar en la práctica.
+Ejecutiva de IDERA en los últimos años. Ello es visible en el hecho de que la 
+Evaluación de IDE implica un esfuerzo desmedido para la Coordinación Ejecutiva de 
+IDERA, dado que en la práctica, la experiencia recorrida muestra que para funcionar 
+adecuadamente requiere de cierta masa crítica de personal calificado y dedicado a 
+esta tarea, en un contexto de achicamiento del Estado y de restricciones para la 
+contratación de personal, sumado a un consenso de los actores, que, si bien 
+teóricamente se tiene, no se termina de concretar.
 
 Además, el esquema generado de variables e indicadores no ha resultado homogéneo
 en términos de su simplicidad y economía de recursos para el relevamiento de los
@@ -740,14 +744,22 @@ pero luego no les es posible perdurar en el tiempo, ya sea por la escasez de
 recursos económicos, por la movilidad del principal recurso humano que las lleva
 adelante, o por la pérdida de apoyo político.
 
-Así, los ciclos de vida de las IDE, al depender de los apoyos políticos, de los
-recursos humanos y de la situación fiscal y macroeconómica, hacen que presenten
-muchas fluctuaciones en el tiempo, tanto ante cambios en el signo político del
-gobierno, como frente a modificaciones en los equilibrios internos entre los
-distintos grupos que integran una coalición gobernante. En algunos casos se
-comprobó que la existencia de una norma de creación de la IDE no garantiza su
-sostenibilidad a lo largo del tiempo, inclusive en el marco de una misma gestión
-de gobierno, lo cual tampoco asegura su operatividad.
+Así, los ciclos de vida de las IDE, al depender de los apoyos políticos, de los 
+recursos humanos y de la situación fiscal y macroeconómica, hacen que presenten 
+muchas fluctuaciones en el tiempo, tanto ante cambios en el signo político del 
+gobierno, como frente a modificaciones en los equilibrios internos entre los 
+distintos grupos que integran una coalición gobernante. Ejemplos de esto lo 
+constituyen la IDE de la provincia de Río Negro, creada a través de los 
+Decretos N° 1839 y 1846 del año 2013, que debido a un quiebre en la coalición 
+interna de gobierno, dejó de funcionar en el año 2015 y hasta la fecha no registra 
+nueva actividad. Algo similar ocurre con la IDE de la provincia de San Luis, 
+creada a través del Decreto N° 7372 del año 2012, que en el año 2017, debido a 
+modificaciones en la conformación del gabinete del gobierno provincial, quedó sin 
+funcionamiento. Con lo cual puede pensarse que si bien la existencia de normativa 
+de creación de una IDE es un requisito necesario para su funcionamiento y 
+legitimación, no necesariamente garantiza su sostenibilidad a lo largo del tiempo, 
+inclusive en el marco de una misma gestión de gobierno, lo cual tampoco asegura su 
+operatividad.
 
 Todas estas cuestiones no son, actualmente, captadas en forma adecuada por los
 indicadores y el procedimiento establecidos para la Evaluación de IDE. Ya que no
@@ -1042,13 +1054,13 @@ Para el tema de **Información Geoespacial** se considera:
     los DByF con el catálogo.
 
 -   Agregar, en el indicador de la categoría de Datos Temáticos, la posibilidad
-    de que el dato no exista en el catálogo de objetos geográficos, pero esté
+    de que el dato no exista en el catálogo de objetos geográficos de IDERA, pero esté
     catalogado en un catálogo propio o esté adaptado para su interoperabilidad,
     dado que no todas las IDE utilizan estrictamente el catálogo de objetos de
     IDERA.
 
 -   Reescribir, en cuanto al linaje, la metodología de evaluación, aclarando los
-    elementos necesarios.
+    elementos necesarios (origen y metodología de producción de los datos).
 
 Para el tema de **Metadatos** resulta conveniente:
 
@@ -1104,7 +1116,7 @@ Fuente: elaboración propia en base a IDERA
 | WFS                               | Funcionamiento                                               | [Configuración   de Servicio WFS en GeoServer](http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf) | Que funcione  correctamente la visualización y descarga. Que funcionen las dos operaciones  básicas GetFeature y DescribeFeatureType |               60%                |         35%          |               |
 | WFS'                              | Difusión                                                     | [Configuración   de Servicio WFS en GeoServer](http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf)  <br />[Lineamientos   para el acceso, difusión, uso e interoperabilidad de información geoespacial](https://www.idera.gob.ar/images/descargas/Lineamientos_acceso_difusion_uso_e_interoperabilidad_IG_v1-0.pdf) | La URL del  geoservicio debe estar publicada en el geoportal. La licencia de uso tiene  que estar explicitada en el resumen del GetCapabilities, o en el metadato del  servicio Web o en cada capa que integre el WFS |               40%                |                      |               |
 | CSW                               | Todas las  capas                                             | [Instructivo   de configuración de Servicio CSW en Geonetwork 3.X](https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Instructivo_de_configuracion_de_Servicio_CSW_en_Geonetwork_3_x_v1_0.pdf) | Evaluar  cantidad de capas visibles en el visualizador y cantidad de capas con  metadato en el catálogo. Es posible consultar los registros completos en XML  y luego compararlo con la lista de capas obtenida de la misma forma desde el  WMS |               100%               |         20%          |               |
-| Datos Abiertos  o Descarga Masiva | Todas las  capas                                             | FALTA                                                        | Link al  servicio WFS publicado  <br />Descarga de  archivos individuales<br />Descarga  masiva de archivos<br />Licencia  especificada en el recurso | 25%  <br />25%<br />25%<br />25% |         10%          |               |
+| Datos Abiertos  o Descarga Masiva | Todas las  capas                                             | PENDIENTE                                                        | Link al  servicio WFS publicado  <br />Descarga de  archivos individuales<br />Descarga  masiva de archivos<br />Licencia  especificada en el recurso | 25%  <br />25%<br />25%<br />25% |         10%          |               |
 
 Fuente: elaboración propia en base a IDERA
 
@@ -1127,7 +1139,7 @@ Fuente: elaboración propia en base a IDERA
 | ------------- | ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- | -------------------- | ------------- |
 | Contenido     | Responsable                                             | [Perfil   de Metadatos para Datos Vectoriales](http://idera.gob.ar/images/stories/downloads/estandares/PMIDERA_Perfil_Metadatos_p_Datos_Vectoriales_IDERA_V2_0.pdf) | Verificar el  responsable del dato y el generador de metadato | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 30%                  | 30%           |
 | Contenido'    | Metadatos del  Servicio en Catálogo de metadatos        | [Perfil   de metadatos para servicios OGC](https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-PMSIDERA-Perfil_de_Metadatos_para_Servicios_OGC_IDERA_V_1_0.pdf) | Metadato  creado y con elementos obligatorios completos, no por defecto | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 20%                  |               |
-| Contenido''   | Título  coincidente con geoservicio y Catálogo de datos | FALTA                                                        | Verificar  título en WMS, WFS, CSW y Catálogo de objetos     | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 20%                  |               |
+| Contenido''   | Título  coincidente con geoservicio y Catálogo de datos | PENDIENTE                                                        | Verificar  título en WMS, WFS, CSW y Catálogo de objetos     | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 20%                  |               |
 | Contenido'''  | Link al  Recurso                                        | [Buenas   Prácticas en Metadatos](https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Guia_de_Buenas_Practicas_de_Metadatos_V1_0.pdf) | Comprobar que  en el metadato exista un link que permita el acceso al recurso (WMS / WFS,  *.shp, etc.) | Porcentaje de  acuerdo a la cantidad de capas que cumplen | 30%                  |               |
 
 Fuente: elaboración propia en base a IDERA
