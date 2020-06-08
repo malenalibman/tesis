@@ -1,0 +1,855 @@
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas">
+      
+      
+        <link rel="canonical" href="https://malenalibman.github.io/tesis/2_marcoteorico/">
+      
+      
+        <meta name="author" content="Malena Libman">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
+    
+    
+      
+        <title>Marco Teórico - Trabajo final de SIG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.b8fb47b5.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.36d1b78f.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#8bc34a">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-green" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#marco-teorico" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Cabecera">
+    <a href="https://malenalibman.github.io/tesis/" title="Trabajo final de SIG" class="md-header-nav__button md-logo" aria-label="Trabajo final de SIG">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Trabajo final de SIG
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Marco Teórico
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/malenalibman/tesis" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    malenalibman/tesis
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://malenalibman.github.io/tesis/" title="Trabajo final de SIG" class="md-nav__button md-logo" aria-label="Trabajo final de SIG">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Trabajo final de SIG
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/malenalibman/tesis" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    malenalibman/tesis
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../licenciatura/" title="Licenciatura en SIG" class="md-nav__link">
+      Licenciatura en SIG
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../descarga/" title="Archivos" class="md-nav__link">
+      Archivos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Trabajo final
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Trabajo final" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Trabajo final
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../0_introduccion/" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1_problema/" title="Problema de Investigación" class="md-nav__link">
+      Problema de Investigación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Marco Teórico
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Marco Teórico" class="md-nav__link md-nav__link--active">
+      Marco Teórico
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-y-monitoreo" class="md-nav__link">
+    Evaluación y Monitoreo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infraestructuras-de-datos-espaciales" class="md-nav__link">
+    Infraestructuras de Datos Espaciales
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estandares-e-interoperabilidad" class="md-nav__link">
+    Estándares e Interoperabilidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metaevaluacion" class="md-nav__link">
+    Metaevaluación
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3_metodologia/" title="Metodología" class="md-nav__link">
+      Metodología
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4_estadodelarte/" title="Estado del arte" class="md-nav__link">
+      Estado del arte
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../6_conclusiones/" title="Conclusiones" class="md-nav__link">
+      Conclusiones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../7_bibliografia/" title="Bibliografía" class="md-nav__link">
+      Bibliografía
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8_anexo/" title="Anexo" class="md-nav__link">
+      Anexo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Desarrollo de la Investigacion
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Desarrollo de la Investigacion" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Desarrollo de la Investigacion
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide1/" title="Antecedentes" class="md-nav__link">
+      Antecedentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide2/" title="Primera versión" class="md-nav__link">
+      Primera versión
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide3/" title="Identificación de oportunidades de mejora" class="md-nav__link">
+      Identificación de oportunidades de mejora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide4/" title="Propuesta de mejoras" class="md-nav__link">
+      Propuesta de mejoras
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide5/" title="Sugerencias para la implementación" class="md-nav__link">
+      Sugerencias para la implementación
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../media/tesis.pdf" title="" class="md-nav__link">
+      
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-y-monitoreo" class="md-nav__link">
+    Evaluación y Monitoreo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infraestructuras-de-datos-espaciales" class="md-nav__link">
+    Infraestructuras de Datos Espaciales
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estandares-e-interoperabilidad" class="md-nav__link">
+    Estándares e Interoperabilidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metaevaluacion" class="md-nav__link">
+    Metaevaluación
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="marco-teorico">Marco Teórico<a class="headerlink" href="#marco-teorico" title="Permanent link">&para;</a></h1>
+<p>Debido a que este trabajo analiza, en esencia, una evaluación, se considera
+necesario delinear los conceptos básicos referidos al monitoreo y la evaluación
+de sistemas complejos como son las IDE.</p>
+<h3 id="evaluacion-y-monitoreo">Evaluación y Monitoreo<a class="headerlink" href="#evaluacion-y-monitoreo" title="Permanent link">&para;</a></h3>
+<p>Según Castelein y Manso Callejo (2010) el concepto de monitoreo se puede definir
+como la capacidad de estar al tanto del estado de un sistema y ser capaz de
+observar cambios en el mismo a través del tiempo. Basándose en la observación de
+monitoreo de los sistemas, con criterios definidos se pueden hacer evaluaciones
+o análisis de estándares.</p>
+<p>Su uso permite comprender y mejorar lo evaluado, resumiendo, describiendo y
+valorando los resultados. Éstos pueden ser usados para la toma de decisiones
+sobre políticas y para resolver problemas de implementación.</p>
+<p>Desde el punto de vista teórico, según Grus, Castelein, Crompvoets, Overduin,
+Van Loenen, Van Groenestijn, Rajabifard y Bregt (2011), el razonamiento detrás
+del marco de análisis o evaluación multicriterio se origina desde los principios
+del estudio de sistemas complejos, donde el uso de múltiples métodos de análisis
+en simultáneo proporciona un resultado de evaluación más holístico y menos
+sesgado de fenómenos complejos. El estudio de las IDE como sistemas complejos,
+combinando distintos puntos de vista, permite atender múltiples propósitos en la
+evaluación, generando así una imagen más real de la IDE y permitiendo dar
+respuesta a distintas necesidades de los actores clave.</p>
+<h3 id="infraestructuras-de-datos-espaciales">Infraestructuras de Datos Espaciales<a class="headerlink" href="#infraestructuras-de-datos-espaciales" title="Permanent link">&para;</a></h3>
+<p>El objeto de investigación principal en la evaluación de IDERA son las
+Infraestructuras de Datos Espaciales (IDE), por lo cual debemos establecer de
+qué se tratan para entender cómo se construye su monitoreo y evaluación.</p>
+<p>La primera definición de una IDE, se realizó en Estados Unidos en 1994, para la
+creación de la IDE Nacional, describiéndola como los medios de tecnología,
+políticas, estándares y recursos humanos necesarios para adquirir, procesar,
+almacenar, distribuir y mejorar la utilización de datos geoespaciales. Este
+enfoque es en particular el de los objetivos de la IDE, según consta en
+President of The United States (1994).</p>
+<p>Pero, así como no existe una sola definición acerca de lo que es un Sistema de
+Información Geográfica, tampoco existe una sola forma de describir qué es una
+Infraestructura de Datos Espaciales.</p>
+<p>Abad Power, Bernabé Poveda y Rodríguez Pascual (2012: 42) las definen como: “una
+infraestructura que permita compartir, intercambiar, combinar, analizar y
+acceder a los datos geográficos de forma estándar e interoperable”.</p>
+<p>Para permitir esa serie de acciones, una IDE está conformada por los siguientes 
+elementos: datos geográficos, servicios Interoperables y acuerdos. Estos elementos 
+son generados a partir de su estructura, compuesta por: datos y sus metadatos, 
+actores, tecnología, acuerdos políticos, normas y servicios. </p>
+<p>Es importante remarcar que el trabajo de la IDE no se apoya únicamente en
+publicar (más que en compartir) la información geográfica, sino en la
+construcción de una comunidad de actores, que generen los mencionados acuerdos
+políticos y adapten las normas internacionales de manera tal que sean aplicables
+en el contexto local de implementación. Esto es, la construcción de una
+<strong>institucionalidad</strong> IDE.</p>
+<p>Para realizar estas acciones, las IDE pueden poner a disposición una serie de
+elementos básicos que se traducen en herramientas informáticas y documentos.
+Vale mencionar, herramientas básicas sobre la <strong>información geoespacial</strong>, como
+el Catálogo de objetos Geográficos (que busca normalizar la nomenclatura y los
+atributos de la información geográfica que se publica), el Geoportal Web (como
+punto de acceso a todos los productos y servicios que ofrece una IDE), los
+<strong>geoservicios y publicación</strong> de datos geográficos (para su descubrimiento,
+acceso y uso) y la documentación sobre estos datos publicados a través de los
+<strong>metadatos</strong>.</p>
+<p>Estos son los denominados Geoservicios Web, a través de los cuales se implementa
+la Visualización de Mapas (Web Map Service - WMS) que pone a disposición las
+capas de información a través de un Visor de Mapas o desde software de
+visualización de capas, la Descarga de Capas (Web Feature Service - WFS) para
+poder analizar y trabajar los datos con cualquier Sistema de Información
+Geográfica (SIG) de escritorio (como puede ser QGIS) y el Catálogo de Metadatos
+(Catalog Service for the Web - CSW) dónde se genera la documentación de la
+información geográfica publicada de manera que se pueda descubrir y acceder a
+ella.</p>
+<p>Todas estas acciones, se canalizan a través de tecnologías ajustadas a los 
+estándares del Open Geospatial Consortium (OGC), consorcio de empresas, agencias 
+gubernamentales, instituciones de investigación y universidades, a cargo de crear 
+las normas y estándares de tecnologías para la democratización de la información 
+geográfica. Esto permite que cualquiera de las acciones definidas se pueda ejecutar 
+en cualquier formato, lugar e idioma, hecho que se refuerza a través de la 
+implementación de dichos estándares en la IDE nacional como uno de sus principales 
+acuerdos.</p>
+<p>Incluso publicaciones centradas SIG reconocen que ya no es posible hablar de SIG
+sin hablar de IDE. Así, Luaces, Olaya y Fonts (2014: 745), afirman que: “Las
+Infraestructuras de Datos Espaciales (IDE) son en la actualidad el elemento
+básico para el aprovechamiento de la información geográfica a nivel global.
+Desde su aparición, han supuesto un cambio conceptual en el ámbito SIG, y su
+importancia en el contexto actual es innegable”.</p>
+<p>Así, podemos ver que las IDE no tienen un solo enfoque para definirlas, ni para
+construirlas. Por eso se pueden caracterizar como sistemas complejos
+adaptativos, dónde sus componentes básicos son similares en todo el globo, pero
+la forma en que se definen, implementan y usan, son disímiles de acuerdo a la
+región, capacidad organizacional y estado de evolución.</p>
+<p>Los sistemas complejos adaptativos son sistemas abiertos en los cuales
+diferentes elementos pueden interactuar de manera dinámica para el intercambio
+de información, autoorganizarse y crear diferentes circuitos de
+retroalimentación, entre los cuales las causas y efectos generan relaciones no
+lineales y en el cual el sistema como todo tiene propiedades emergentes que no
+pueden ser entendidas por referencia a las partes individuales. Grus, Crompvoets
+y Bregt (2007).</p>
+<h3 id="estandares-e-interoperabilidad">Estándares e Interoperabilidad<a class="headerlink" href="#estandares-e-interoperabilidad" title="Permanent link">&para;</a></h3>
+<p>En línea con Olaya y Turton (2014), se puede entender como un estándar a
+cualquier documento o práctica que tenga por objeto armonizar los aspectos
+técnicos de un determinado producto o servicio.</p>
+<p>En tal sentido, todo estándar requiere, para operar efectivamente como tal, que
+un grupo o comunidad lo acepte para definir, a su interior, las características
+de ese producto o de ese servicio.</p>
+<p>Si solamente es ese uso, tácitamente aceptado por la comunidad o grupo, el que
+valida el estándar, se puede considerar al mismo como un estándar de facto. En
+cambio, los estándares de iure, son aquellos que han sido promovidos por algún
+ente oficial de normalización o cuyo uso ha sido impuesto con carácter legal.</p>
+<p>A su vez, se considera un estándar abierto a aquel cuya definición se encuentre
+disponible para cualquier persona que busque conocerla y utilizarla para el
+desarrollo de sus actividades.</p>
+<p>Por su parte, siguiendo a Erba, Duarte y Stiefel (2012), en su recorrido por las
+distintas definiciones de interoperabilidad, se puede afirmar que, a nivel
+general, se trata de la capacidad que posee una organización o un sistema para
+trabajar en forma conjunta con otras organizaciones o sistemas que existan
+actualmente o que se vayan a crear.</p>
+<p>En términos más específicos, OGC, entiende la interoperabilidad como el trabajo 
+desarrollado en forma recíproca entre distintas aplicaciones informáticas que 
+permite prescindir de penosas tareas de conversión, importaciones y exportaciones 
+de datos y otras barreras de acceso a los recursos distribuidos impuestas por la 
+diversidad de entornos de procesamiento<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>El International Organization for Standardization - Technical Committee (ISO/TC)
+211, familia de normas ISO que apunta a la estandarización en el campo de la
+información geográfica digital, normando métodos, herramientas y servicios para
+datos, comprende a la interoperabilidad como la capacidad de los sistemas y sus
+componentes en relación al intercambio de información y en cuanto al
+procesamiento cooperativo entre las diferentes aplicaciones<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>Así, siguiendo a Mansilla (2016), la estandarización y la normalización, lograda
+a través de acuerdos institucionales, constituyen las herramientas fundamentales
+para propiciar un mayor nivel de interoperabilidad.</p>
+<h3 id="metaevaluacion">Metaevaluación<a class="headerlink" href="#metaevaluacion" title="Permanent link">&para;</a></h3>
+<p>Para que una evaluación tenga un nivel de calidad aceptable, pruebe su validez y
+consiga credibilidad entre usuarios potenciales, es necesario evaluarla en sí
+misma, eso se llama Meta Evaluación, identificando fortalezas y debilidades para
+la mejora de sus procesos de implementación, tal como se plantea en Castelein y
+Manso Callejo (2010).</p>
+<p>En ese sentido, la participación de los propios actores de una IDE, en el
+proceso de monitoreo y evaluación es esencial para el aprovechamiento de estas
+herramientas y resulta de utilidad en el cumplimiento de los objetivos de las
+IDE.</p>
+<p>Así, el monitoreo y evaluación de las IDE de Argentina, en base a las
+experiencias tanto de IDERA como internacionales, no puede ser definido desde
+afuera, ni únicamente desde la investigación académica, sino que debe realizarse
+con la participación de los diversos actores que integran la comunidad de IDERA.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://www.opengeospatial.org/">The Open Geospatial Consortium | OGC</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://committee.iso.org/home/tc211">ISO - TC211</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Pie">
+        
+          <a href="../1_problema/" title="Problema de Investigación" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Problema de Investigación
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../3_metodologia/" title="Metodología" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Metodología
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Trabajo final de carrera Licenciatura en Sistemas de Información Geográfica de Malena Libman
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/malenalibman/" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/malenillavv" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.linkedin.com/in/malena-libman/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.de50e36d.min.js"></script>
+      <script src="../assets/javascripts/bundle.594f2bf6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.c03f0417.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

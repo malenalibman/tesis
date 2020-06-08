@@ -1,0 +1,1363 @@
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Evaluación de Infraestructuras de Datos Espaciales. El caso de IDERA, análisis y propuestas">
+      
+      
+        <link rel="canonical" href="https://malenalibman.github.io/tesis/5_evaluaciondeide4/">
+      
+      
+        <meta name="author" content="Malena Libman">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
+    
+    
+      
+        <title>Propuesta de mejoras - Trabajo final de SIG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.b8fb47b5.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.36d1b78f.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#8bc34a">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-green" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#la-evaluacion-de-ide-de-idera" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Cabecera">
+    <a href="https://malenalibman.github.io/tesis/" title="Trabajo final de SIG" class="md-header-nav__button md-logo" aria-label="Trabajo final de SIG">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Trabajo final de SIG
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Propuesta de mejoras
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/malenalibman/tesis" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    malenalibman/tesis
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://malenalibman.github.io/tesis/" title="Trabajo final de SIG" class="md-nav__button md-logo" aria-label="Trabajo final de SIG">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Trabajo final de SIG
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/malenalibman/tesis" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    malenalibman/tesis
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../licenciatura/" title="Licenciatura en SIG" class="md-nav__link">
+      Licenciatura en SIG
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../descarga/" title="Archivos" class="md-nav__link">
+      Archivos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Trabajo final
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Trabajo final" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Trabajo final
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../0_introduccion/" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1_problema/" title="Problema de Investigación" class="md-nav__link">
+      Problema de Investigación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2_marcoteorico/" title="Marco Teórico" class="md-nav__link">
+      Marco Teórico
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3_metodologia/" title="Metodología" class="md-nav__link">
+      Metodología
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4_estadodelarte/" title="Estado del arte" class="md-nav__link">
+      Estado del arte
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../6_conclusiones/" title="Conclusiones" class="md-nav__link">
+      Conclusiones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../7_bibliografia/" title="Bibliografía" class="md-nav__link">
+      Bibliografía
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8_anexo/" title="Anexo" class="md-nav__link">
+      Anexo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Desarrollo de la Investigacion
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Desarrollo de la Investigacion" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Desarrollo de la Investigacion
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide1/" title="Antecedentes" class="md-nav__link">
+      Antecedentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide2/" title="Primera versión" class="md-nav__link">
+      Primera versión
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide3/" title="Identificación de oportunidades de mejora" class="md-nav__link">
+      Identificación de oportunidades de mejora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Propuesta de mejoras
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Propuesta de mejoras" class="md-nav__link md-nav__link--active">
+      Propuesta de mejoras
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#propuesta-de-mejoras" class="md-nav__link">
+    Propuesta de mejoras
+  </a>
+  
+    <nav class="md-nav" aria-label="Propuesta de mejoras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#condiciones-previas-que-permiten-una-mejor-evaluacion-de-ide" class="md-nav__link">
+    Condiciones previas que permiten una mejor evaluación de IDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revision-de-los-indicadores" class="md-nav__link">
+    Revisión de los Indicadores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones-sobre-el-proceso-de-evaluacion" class="md-nav__link">
+    Recomendaciones sobre el proceso de evaluación
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5_evaluaciondeide5/" title="Sugerencias para la implementación" class="md-nav__link">
+      Sugerencias para la implementación
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../media/tesis.pdf" title="" class="md-nav__link">
+      
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#propuesta-de-mejoras" class="md-nav__link">
+    Propuesta de mejoras
+  </a>
+  
+    <nav class="md-nav" aria-label="Propuesta de mejoras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#condiciones-previas-que-permiten-una-mejor-evaluacion-de-ide" class="md-nav__link">
+    Condiciones previas que permiten una mejor evaluación de IDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revision-de-los-indicadores" class="md-nav__link">
+    Revisión de los Indicadores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones-sobre-el-proceso-de-evaluacion" class="md-nav__link">
+    Recomendaciones sobre el proceso de evaluación
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="la-evaluacion-de-ide-de-idera">La evaluación de IDE de IDERA<a class="headerlink" href="#la-evaluacion-de-ide-de-idera" title="Permanent link">&para;</a></h1>
+<h2 id="propuesta-de-mejoras">Propuesta de mejoras<a class="headerlink" href="#propuesta-de-mejoras" title="Permanent link">&para;</a></h2>
+<p>Luego de todo el proceso referido, se observa que, pese a no presentarlo en
+forma explícita, la propuesta original de evaluación de IDE de IDERA tiene un
+sustento teórico bastante sólido y presenta una serie de elementos valiosos que
+dan lugar a proponer la introducción de mejoras para avanzar hacia su efectiva
+implementación.</p>
+<p>Ello surge de analizar la primera versión de la evaluación de IDERA en conjunto
+con el seguimiento y monitoreo de las IDE y la experiencia piloto de evaluación,
+a la luz de los distintos casos de estudio investigados en el estado del arte
+del presente trabajo. Así, en la evaluación de la PSDI, de eSDI-Net+, de GIDEON,
+de INSPIRE y de la IDEC se aplica un análisis multicriterio y un esquema similar
+al de indicadores, categorías y temas propuesto por IDERA, para arribar a un
+resultado global correspondiente a cada IDE.</p>
+<p>A su vez, IDERA también coincide con INSPIRE en la idea general de dar cuenta
+del grado de cumplimiento de las IDE de los estándares publicados y en el
+informe anual (denominado tarjeta de identificación de la IDE por INSPIRE).</p>
+<p>El criterio general de la presente propuesta es, entonces, incidir positivamente
+sobre las oportunidades identificadas en la sección anterior. En tal sentido, se
+busca que la evaluación de IDE de IDERA contemple todas las acciones de una IDE
+en sus elementos básicos, siguiendo las definiciones de dichos conceptos
+desarrolladas en el marco teórico del presente trabajo.</p>
+<p>Para ello, en primer lugar, se da cuenta de una serie de condiciones previas que
+permiten llevar adelante una mejor evaluación de las IDE, tales como el logro de
+acuerdos sólidos entre los actores, el fortalecimiento del equipo de apoyo de la
+Coordinación Ejecutiva de IDERA y el desarrollo y publicación de estándares,
+recomendaciones, instructivos y otra documentación relevante por parte de IDERA.</p>
+<p>En segundo término, se desarrolla la propuesta de modificación de los
+indicadores de la evaluación de IDE de IDERA, eliminando algunos, mejorando
+conceptualmente otros y estableciendo un esquema diferenciado según se trate de
+una IDE de máxima jerarquía responsable de la producción de Datos Básicos y
+Fundamentales o no.</p>
+<p>Finalmente, se realizan una serie de sugerencias que hacen al proceso de la
+evaluación de IDE de IDERA, abarcando cuestiones tales como la automatización en
+el relevamiento de información, el informe anual, el rol de los revisores de las
+evaluaciones, el informe de seguimiento, las capacitaciones, la autoevaluación y
+la meta evaluación.</p>
+<p>Todo ello, teniendo siempre como objetivos centrales facilitar la implementación
+de la evaluación de IDE, garantizar su continuidad a lo largo del tiempo y
+promover la mejora permanente del propio proceso de evaluación, cubriendo las
+necesidades de IDERA de seguimiento de las IDE y fomentando la evolución de las
+mismas IDE.</p>
+<h3 id="condiciones-previas-que-permiten-una-mejor-evaluacion-de-ide">Condiciones previas que permiten una mejor evaluación de IDE<a class="headerlink" href="#condiciones-previas-que-permiten-una-mejor-evaluacion-de-ide" title="Permanent link">&para;</a></h3>
+<p>En tanto comunidad, IDERA necesita del compromiso real del conjunto de los
+actores que la integran, en términos de evaluación y de cumplimiento de los
+estándares definidos por la misma comunidad. En tal sentido, se trata de
+aprovechar mejor la información que surja de la evaluación para ayudar a los
+organismos a cumplir con los estándares o para modificar dichos estándares,
+adaptándolos a lo que resulta factible de cumplirse en la realidad actual de
+nuestro país.</p>
+<p>La participación de los diferentes actores en IDERA, por más que esté enmarcada
+en instituciones u organismos a los cuales pertenecen sus representantes, toma
+la forma de trabajo voluntario.</p>
+<p>Ello implica, como falencia, la imposibilidad de asignar plazos y obligatoriedad
+de la realización de las tareas. Motivo por el cual, las actividades técnicas de
+mayor carga de tiempo y trabajo, deberían ser llevadas a cabo por personal
+rentado para tal fin (dependiente de la Coordinación Ejecutiva de IDERA). La
+aplicación de la evaluación de IDE, luego, debería ser revisada por el Equipo
+Coordinador durante sus reuniones, a fin de ser validada y publicada, en un
+proceso más transparente y eficiente.</p>
+<p>Otra de las grandes trabas para el proceso es la falta de publicación de algunos
+documentos e instructivos que hagan posible la implementación de todas las
+recomendaciones por parte de las IDE, así como también la evaluación. Dichos
+documentos son:</p>
+<ul>
+<li>
+<p><strong>Procedimiento para la evaluación de una IDE de máxima jerarquía:</strong>
+    documento con el detalle del procedimiento que incluya la lógica del mismo y
+    los pasos a seguir para su implementación.</p>
+</li>
+<li>
+<p><strong>Esquema de Evaluación de IDE:</strong> detalle de los indicadores, con la
+    referencia a los documentos de IDERA con las respectivas recomendaciones y
+    estándares y con la explicación de la forma en que se evalúa cada uno de
+    ellos.</p>
+</li>
+<li>
+<p><strong>Recomendaciones para el contenido del Geoportal de una IDE de máxima
+    jerarquía:</strong> listado de los elementos que no pueden faltar en el sitio web
+    de una IDE.</p>
+</li>
+<li>
+<p><strong>Contenidos Mínimos para la presentación del Informe Anual de las IDE de
+    máxima jerarquía</strong>: lista de información que se solicita a cada IDE todos
+    los años y formulario disponible para ser completado (ver propuesta de
+    implementación).</p>
+</li>
+<li>
+<p><strong>Detalle de los responsables de la producción y la publicación de cada
+    DByF:</strong> listado para la implementación de la evaluación y/o para que los
+    usuarios tengan conocimiento de quiénes son los productores oficiales de los
+    datos base del país.</p>
+</li>
+<li>
+<p><strong>Documento Ampliatorio sobre los DByF:</strong> estándar de la calidad del dato
+    que deben publicar sus responsables (más allá de la definición del objeto),
+    para posibilitar su análisis y evaluación.</p>
+</li>
+<li>
+<p><strong>Modificación del Documento de Normalización de Capas para Servicios OGC:</strong>
+    que estipule que en el Catálogo de Metadatos las capas deben tener nombres
+    equivalentes a los títulos en el WMS y a los del Catálogo de Objetos. Con la
+    única excepción, de que, en el Catálogo de Metadatos, además, se incluya la
+    jurisdicción, por ejemplo, <em>Parcelas de La Pampa</em>, donde <em>Parcelas</em> es el
+    nombre del Catálogo de Objetos, pero en el metadato se agrega la provincia o
+    ciudad para permitir la cosecha en otros catálogos, como el de IDERA, que
+    incluyen parcelas de otros territorios.</p>
+</li>
+</ul>
+<p>Siendo que la evaluación se basa en los estándares y recomendaciones publicados
+por IDERA, se sugiere la mejora de dicha publicación de una manera más ordenada
+que permita a las IDE encontrar, además de todas las recomendaciones
+documentadas que establecen estándares de los indicadores, los instructivos y/o
+recursos para implementarlos.</p>
+<p>De este modo, se aborda el problema desde dos soluciones complementarias: por un
+lado, las mejoras en el sitio web, como son una página interactiva de búsqueda
+de recomendaciones, instructivos y soluciones IDE, que permita encontrar todo
+más fácilmente y una sección con la metodología de evaluación, uniendo la forma
+de llegar a una autoevaluación y la posibilidad de encontrar todo el
+procedimiento y sus herramientas en un sólo lugar.</p>
+<p>Por otra parte, se propone la consolidación de los estándares y recomendaciones
+de IDERA en un documento resumen que haga referencia (con los enlaces) al resto
+de los documentos existentes, de manera que exista un verdadero manual de IDE
+que visibilice lo logrado por los grupos de trabajo de IDERA.</p>
+<p>Adicionalmente, se recomienda incorporar en el documento de procedimiento de la
+evaluación de IDE de IDERA la consolidación de los estándares y recomendaciones
+y enlazar a los documentos específicos correspondientes.</p>
+<h3 id="revision-de-los-indicadores">Revisión de los Indicadores<a class="headerlink" href="#revision-de-los-indicadores" title="Permanent link">&para;</a></h3>
+<p>Para el proceso de evaluación en sí misma, la primera versión de la evaluación
+de IDE de IDERA contaba con una serie de indicadores que permitían calificar el
+cumplimiento de los estándares y recomendaciones de cada una de las categorías
+estipuladas con la intención de que todas las acciones de una IDE se encuentren
+cubiertas. Pero en la práctica algunos de estos indicadores no resultaron del
+todo adecuados para la tarea, por lo que se plantea una serie de cambios para
+mejorar el esquema en ese sentido.</p>
+<p>Para el tema <strong>Institucional</strong> se sugiere introducir las siguientes revisiones:</p>
+<ul>
+<li>Especificar, en la metodología de evaluación para la descentralización de
+    las IDE, en la forma de asignar la calificación que en los metadatos o en el
+    abstract del geoservicio se debe indicar el autor (nombre u organismo)
+    distinto de la IDE central, a fin de conocer el grado de descentralización
+    de la IDE.</li>
+</ul>
+<p>Para el tema <strong>Publicación y Geoservicios</strong> se recomienda:</p>
+<ul>
+<li>
+<p>Especificar qué contenidos mínimos debe tener el geoportal y el visor de
+    mapas en una hoja del esquema de evaluación con una ponderación equitativa
+    entre todos los elementos para poder calcular cuál sería el puntaje de la
+    variable de manera clara.</p>
+</li>
+<li>
+<p>Aclarar en el método de evaluación, en la variable sobre peticiones básicas
+    del WMS, que al observar las capacidades del servicio (GetCapabilities) debe
+    tener habilitado el GetMap, ya que no estaba claro cómo observarlo.</p>
+</li>
+<li>
+<p>Aclarar, para el caso del GetFeatureInfo, que las capas deben estar
+    habilitadas para consulta (QueryAble).</p>
+</li>
+<li>
+<p>Quitar la variable de SLD, dado que no hay una metodología de evaluación ni
+    existe una recomendación de IDERA publicada sobre ella. Aunque sería muy
+    importante que IDERA avanzara en su desarrollo.</p>
+</li>
+<li>
+<p>Modificar la metodología de análisis de la Salud del Servicio, especificando
+    cómo se debería analizar la disponibilidad del servicio WMS a través de una
+    herramienta. Mencionar en el anexo del documento de procedimiento de
+    evaluación que al publicar geoservicios las IDE deben comprometerse a que
+    sus servidores estén siempre activos y disponibles para que el acceso a
+    ellos sea posible de manera permanente.</p>
+</li>
+<li>
+<p>Establecer que el chequeo sea al menos en dos momentos distintos del día
+    para que la muestra sea representativa, consolidando dichos datos sobre el
+    seguimiento de los servidores en forma anual o semestral. Sugerir la
+    utilización de GeoHealthCheck como herramienta de software libre y de código
+    abierto que permite a IDERA monitorear el estado de los geoservicios, entre
+    otros chequeos.</p>
+</li>
+<li>
+<p>Aclarar, en el caso del WFS, que las operaciones que deben estar habilitadas
+    son GetFeature y DescribeFeatureType.</p>
+</li>
+<li>
+<p>Eliminar la variable de un servicio WFS por separado para los DByF. La
+    Categoría queda así dividida en dos indicadores: el funcionamiento del
+    servicio con las operaciones básicas y la difusión del mismo con la
+    publicación de la URL en el geoportal con su correspondiente licencia de
+    uso.</p>
+</li>
+<li>
+<p>Reescribir la variable de CSW, quitando la necesidad de un servicio CSW
+    filtrando únicamente los DByF e incorporando el documento de configuración
+    de CSW publicado por IDERA.</p>
+</li>
+<li>
+<p>Evaluar, para el servicio CSW, la cantidad de capas visibles en el
+    visualizador y la cantidad de capas con metadato accesibles a través de
+    dicho servicio. Para ello, es posible consultar los registros completos al
+    servicio en formato Lenguaje de Marcado Extensible (XML) y luego compararlos
+    con la lista de capas obtenida de la misma forma desde el servicio WMS.</p>
+</li>
+<li>
+<p>Adaptar el indicador de Datos Abiertos para tener en cuenta las distintas
+    formas de hacer disponible la información y posibilitar su descarga, dado
+    que la única recomendación existente en la materia es que los DByF se
+    publiquen como WFS. Establecer para este indicador un cuarto del puntaje
+    máximo por cada una de las siguientes condiciones que se cumpla: link al
+    servicio WFS publicado, descarga de archivos individuales, descarga masiva
+    de archivos, licencia especificada en el recurso de manera que al
+    descargarlo se incluya la información legal sobre su uso. Dicha información
+    es crucial para que la comunidad usuaria de los datos pueda hacer un
+    adecuado uso.</p>
+</li>
+</ul>
+<p>Para el tema de <strong>Información Geoespacial</strong> se considera:</p>
+<ul>
+<li>
+<p>Dividir el indicador para poder establecer si los DByF se encuentran
+    publicados para visualización, para descarga y acorde al catálogo.</p>
+</li>
+<li>
+<p>La publicación para la descarga reemplaza al indicador que estaba antes en
+    WFS. Incorporar la lista de DByF al esquema de evaluación para analizar
+    estos tres indicadores de acuerdo a lo que corresponda al organismo publicar
+    y al porcentaje de dichas capas efectivamente publicado.</p>
+</li>
+<li>
+<p>Incorporar la necesidad de explicitar las restricciones legales de uso de
+    los datos para las capas de DByF a fin de evitar el uso o la modificación
+    inadecuados de los datos.</p>
+</li>
+<li>
+<p>Describir con mayor precisión el método de evaluación de la concordancia de
+    los DByF con el catálogo.</p>
+</li>
+<li>
+<p>Agregar, en el indicador de la categoría de Datos Temáticos, la posibilidad
+    de que el dato no exista en el catálogo de objetos geográficos de IDERA, pero esté
+    catalogado en un catálogo propio o esté adaptado para su interoperabilidad,
+    dado que no todas las IDE utilizan estrictamente el catálogo de objetos de
+    IDERA.</p>
+</li>
+<li>
+<p>Reescribir, en cuanto al linaje, la metodología de evaluación, aclarando los
+    elementos necesarios (origen y metodología de producción de los datos).</p>
+</li>
+</ul>
+<p>Para el tema de <strong>Metadatos</strong> resulta conveniente:</p>
+<ul>
+<li>Eliminar la categoría de validación. Ello obedece a que no es posible
+    evaluar cada metadato validando a través de un Catálogo de Metadatos y,
+    dentro del contenido, la fecha de actualización del metadato, dado que la
+    edición periódica de los metadatos no provee información valiosa a la
+    evaluación.</li>
+</ul>
+<p>Vale aclarar que la propuesta de temas, categorías e indicadores precedente es
+de plena aplicación, únicamente, para las IDE productoras de DByF. Para el resto
+de las IDE de máxima jerarquía se propone no considerar la categoría “datos
+básicos y fundamentales publicados”, que incluye los indicadores: “publicación
+para visualización”, “publicados para descarga” y “acorde al catálogo de
+objetos”, lo que implica aplicar una mayor ponderación al resto de las
+categorías e indicadores del tema “información geoespacial”.</p>
+<h5>Cuadro 5 - Comparación del peso de los indicadores entre IDE Productora de DByF e IDE Productora de Datos Temáticos únicamente</h5>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th></th>
+<th align="center">IDE Productora de DByF</th>
+<th align="center">IDE Productora de Datos Temáticos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Categoría</strong></td>
+<td><strong>Indicadores</strong></td>
+<td align="center"><strong>Peso categoría</strong></td>
+<td align="center"><strong>Peso categoría</strong></td>
+</tr>
+<tr>
+<td align="left">DByF publicados</td>
+<td>Publicados para visualización<br />Publicados para descarga<br />Acorde a Catálogo de Datos</td>
+<td align="center">50%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">Datos Temáticos Publicados</td>
+<td>Catálogo de Objetos Geográficos de IDERA</td>
+<td align="center">10%</td>
+<td align="center">40%</td>
+</tr>
+<tr>
+<td align="left">Linaje completo en Metadatos</td>
+<td>Perfil de metadatos</td>
+<td align="center">10%</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="left">Normalización de Nombres de capas</td>
+<td>Nombre sin caracteres especiales<br />Título de acuerdo a catálogo<br />1 capa = 1 objeto del catálogo</td>
+<td align="center">30%</td>
+<td align="center">30%</td>
+</tr>
+</tbody>
+</table>
+<h5>Cuadro 6 - Indicadores modificados del tema Institucionalidad</h5>
+<table>
+<thead>
+<tr>
+<th><strong>Categoría</strong></th>
+<th><strong>Indicador</strong></th>
+<th><strong>Documento    publicado</strong></th>
+<th align="left"><strong>Método de evaluación</strong></th>
+<th><strong>Calificación</strong></th>
+<th align="center"><strong>Peso   categoría</strong></th>
+<th align="center"><strong>Peso tema</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adhesión  a IDERA</td>
+<td>Fecha  de adhesión</td>
+<td><a href="http://www.idera.gob.ar/index.php?option=com_content&amp;view=article&amp;id=200&amp;Itemid=267">Adhesión   a IDERA</a></td>
+<td align="left">Según  registros de IDERA</td>
+<td></td>
+<td align="center"></td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td>Informe  Anual</td>
+<td>Contenidos  mínimos para la presentación del informe anual de las IDE de máxima jerarquía</td>
+<td>PENDIENTE</td>
+<td align="left">Si  cumple con el contenido mínimo puede evaluarse</td>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Norma</td>
+<td>decreto  publicado en IDERA</td>
+<td><a href="https://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Recomendaciones_para_creacion_de_nodo_IDE.pdf">Recomendaciones   para la creación de un nodo IDE de máxima jerarquía</a></td>
+<td align="left">Según  registros de IDERA y/o Geoportal, punto 9 del documento de recomendaciones</td>
+<td>Norma  publicada: Sí/No</td>
+<td align="center">40%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Descentralización  de la producción y publicación de la información</td>
+<td>Publicación  desde los productores de información</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinDByF_V2.0_IDERA.pdf">Descripción   De Datos Básicos y Fundamentales</a>  <br /><a href="https://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Recomendaciones_para_creacion_de_nodo_IDE.pdf">Recomendaciones   para la creación de un nodo IDE de máxima jerarquía</a></td>
+<td align="left">Cada  capa debe tener identificado su autor y la URL del geoservicio original, del  productor responsable o designado para la producción y la publicación de la  información. En el caso que el catálogo de metadatos sea descentralizado, los  metadatos estarán cosechados del original. En base a puntos 12 y 16 del  documento de Recomendaciones para la conformación de un nodo IDE de máxima  jerarquía. De acuerdo a las recomendaciones establecidas, en caso de  centralizar la información de otros organismos (nodos), se deberá especificar  el origen de la información en el metadato, tanto en el linaje como en el  contacto del productor de la información</td>
+<td>En  los casos en los que corresponda:   - Si la información está en el metadato y si muestra al creador de los datos  distinto del publicador: 100%    - Si la información está en el "abstract" del servicio que muestre  de que está descentralizado: 50%    - Si no está publicada o no está descentralizado: 0%    Adicionalmente debe estar especificado en el geoportal que nodos existen y  cuáles son sus recursos disponibles</td>
+<td align="center">60%</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h5>Cuadro 7 - Indicadores modificados del tema Publicación y Geoservicios</h5>
+<table>
+<thead>
+<tr>
+<th><strong>Categoría</strong></th>
+<th><strong>Indicadores</strong></th>
+<th><strong>Documento    publicado</strong></th>
+<th align="left"><strong>Método de evaluación</strong></th>
+<th align="center"><strong>Calificación</strong></th>
+<th align="center"><strong>Peso   categoría</strong></th>
+<th align="center"><strong>Peso tema</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Geoportal</td>
+<td>Recomendaciones  para el contenido del geoportal de una IDE de máxima jerarquía</td>
+<td>PENDIENTE</td>
+<td align="left">Si se cumplen  todos los requisitos obligatorios de contenido</td>
+<td align="center">75%</td>
+<td align="center">20%</td>
+<td align="center">30%</td>
+</tr>
+<tr>
+<td>Visualizador</td>
+<td>PENDIENTE</td>
+<td>Visualizador  que funcione, que las herramientas de consulta de objetos devuelvan  información y que las capas de nodos fuera de la IDE u otras IDE estén por  WMS y no cargadas en el mismo</td>
+<td align="left">25%</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WMS</td>
+<td>GetCapabilities   GetMap</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/ide/IDERA-RecomendacionesparaServiciosWebdeMapasWMS_v1.2.pdf">Recomendaciones   para servicios Web de Mapas</a></td>
+<td align="left">Que la  operación GetCapabilities devuelva un XML que tenga habilitada la operación  GetMap</td>
+<td align="center">15%</td>
+<td align="center">15%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WMS'</td>
+<td>GetFeatureInfo</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/ide/IDERA-RecomendacionesparaServiciosWebdeMapasWMS_v1.2.pdf">Recomendaciones   para servicios Web de Mapas</a></td>
+<td align="left">Debe estar  habilitado en el GetCapabilities y las capas deben estar consultables (QueryAble)</td>
+<td align="center">10%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WMS''</td>
+<td>SRS o CRS</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/ide/IDERA-RecomendacionesparaServiciosWebdeMapasWMS_v1.2.pdf">Recomendaciones   para servicios Web de Mapas</a></td>
+<td align="left">Del  GetCapabilities se obtiene la lista de SRS habilitados y se puede comparar  con la lista de los recomendados (4326, 3857)</td>
+<td align="center">5%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WMS'''</td>
+<td>Metadata URL</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/ide/IDERA-RecomendacionesparaServiciosWebdeMapasWMS_v1.2.pdf">Recomendaciones   para servicios Web de Mapas</a></td>
+<td align="left">Dentro del  GetCapabilities en cada detalle de cada capa aparecerá el tag metadata, con  la URL del metadato</td>
+<td align="center">30%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WMS''''</td>
+<td>Configuración  del Metadato en el WMS</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/ide/IDERA-RecomendacionesparaServiciosWebdeMapasWMS_v1.2.pdf">Recomendaciones   para servicios Web de Mapas</a></td>
+<td align="left">El  GetCapabilities debe tener cargados los datos de contacto, título y resumen</td>
+<td align="center">10%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WMS'''''</td>
+<td>Salud del  servicio</td>
+<td>Debería  agregarse en el anexo del documento de procedimiento de evaluación y  mencionarse que es uno de los compromisos de las IDE que sus servidores estén  siempre activos y disponibles</td>
+<td align="left">Anual o el  último semestre. Ver que el chequeo sea al menos en dos momentos distintos  del día para que la muestra sea representativa. Se recomienda el uso de  GeoHealthCheck como herramienta de software libre y de código abierto que  permite a IDERA monitorear el estado de los geoservicios, entre otros  chequeos</td>
+<td align="center">30%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WFS</td>
+<td>Funcionamiento</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf">Configuración   de Servicio WFS en GeoServer</a></td>
+<td align="left">Que funcione  correctamente la visualización y descarga. Que funcionen las dos operaciones  básicas GetFeature y DescribeFeatureType</td>
+<td align="center">60%</td>
+<td align="center">35%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>WFS'</td>
+<td>Difusión</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/documentos/guias/tecnologia/Instructivo_-Configuracion_WFS_en_GEOSERVER.pdf">Configuración   de Servicio WFS en GeoServer</a>  <br /><a href="https://www.idera.gob.ar/images/descargas/Lineamientos_acceso_difusion_uso_e_interoperabilidad_IG_v1-0.pdf">Lineamientos   para el acceso, difusión, uso e interoperabilidad de información geoespacial</a></td>
+<td align="left">La URL del  geoservicio debe estar publicada en el geoportal. La licencia de uso tiene  que estar explicitada en el resumen del GetCapabilities, o en el metadato del  servicio Web o en cada capa que integre el WFS</td>
+<td align="center">40%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>CSW</td>
+<td>Todas las  capas</td>
+<td><a href="https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Instructivo_de_configuracion_de_Servicio_CSW_en_Geonetwork_3_x_v1_0.pdf">Instructivo   de configuración de Servicio CSW en Geonetwork 3.X</a></td>
+<td align="left">Evaluar  cantidad de capas visibles en el visualizador y cantidad de capas con  metadato en el catálogo. Es posible consultar los registros completos en XML  y luego compararlo con la lista de capas obtenida de la misma forma desde el  WMS</td>
+<td align="center">100%</td>
+<td align="center">20%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Datos Abiertos  o Descarga Masiva</td>
+<td>Todas las  capas</td>
+<td>PENDIENTE</td>
+<td align="left">Link al  servicio WFS publicado  <br />Descarga de  archivos individuales<br />Descarga  masiva de archivos<br />Licencia  especificada en el recurso</td>
+<td align="center">25%  <br />25%<br />25%<br />25%</td>
+<td align="center">10%</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h5>Cuadro 8 - Indicadores modificados del tema Información Geoespacial</h5>
+<table>
+<thead>
+<tr>
+<th><strong>Categoría</strong></th>
+<th><strong>Indicadores</strong></th>
+<th><strong>Documento    publicado</strong></th>
+<th><strong>Método de evaluación</strong></th>
+<th><strong>Calificación</strong></th>
+<th align="center"><strong>Peso   categoría</strong></th>
+<th align="center"><strong>Peso tema</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DByF  publicados</td>
+<td>Publicados  para visualización</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinDByF_V2.0_IDERA.pdf">Descripción   de Datos Básicos y Fundamentales </a></td>
+<td>Fácilmente  identificables para el usuario en el visualizador o en el catálogo de  metadatos</td>
+<td>20%</td>
+<td align="center">50%</td>
+<td align="center">30%</td>
+</tr>
+<tr>
+<td>DByF  publicados'</td>
+<td>Publicados  para descarga</td>
+<td><a href="https://www.idera.gob.ar/images/descargas/Lineamientos_acceso_difusion_uso_e_interoperabilidad_IG_v1-0.pdf">Lineamientos   para el acceso, difusión, uso e interoperabilidad de información geoespacial</a></td>
+<td>Licencia abierta  explicitada y formato abierto en el metadato de cada capa</td>
+<td>45%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>DByF  publicados''</td>
+<td>Acorde a  Catálogo de Datos</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinDByF_V2.0_IDERA.pdf">Descripción   de Datos Básicos y Fundamentales </a></td>
+<td>Manual,  evaluar nombre de las capas, existencia y coherencia de los atributos con el  Catálogo y completitud a nivel geográfico en función del ámbito de actuación  del publicador</td>
+<td>35%</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Datos  Temáticos Publicados</td>
+<td>Catálogo de  Objetos Geográficos de IDERA</td>
+<td><a href="http://www.idera.gob.ar/images/stories/downloads/catalogo/DescripcinCatlogodeOG_V2.5_IDERA.pdf">Descripción   del Catálogo de Objetos Geográficos</a></td>
+<td>Si el dato temático coincide con un objeto del  catálogo, debe estar acorde a la estructura del mismo (nombre, atributos). Si  no coincide debe estar adaptado a las instrucciones para catalogar objetos  contenidas en el Documento del Catálogo</td>
+<td>Porcentaje de  capas publicadas que cumplen cada recomendación</td>
+<td align="center">10%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Linaje  completo en Metadatos</td>
+<td>Perfil de  metadatos</td>
+<td><a href="https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Guia_de_Buenas_Practicas_de_Metadatos_V1_0.pdf">Buenas   Prácticas en Metadatos</a></td>
+<td>Debe contener  información básica sobre el origen y la metodología de producción del dato  identificando datos primarios y secundarios utilizados para su generación.  Debe dar información al usuario sobre la calidad del dato</td>
+<td>Porcentaje de  capas publicadas que cumplen cada recomendación</td>
+<td align="center">10%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Normalización  de Nombres de capas</td>
+<td>Nombre sin caracteres  especiales  <br />Título de  acuerdo a catálogo<br />1 capa = 1  objeto del catálogo</td>
+<td><a href="https://www.idera.gob.ar/images/stories/downloads/estandares/Normalizacin_de_capas_para_servicios_OGC.pdf">Normalización   de Capas para Servicios OGC</a></td>
+<td>Debe cumplir  con las condiciones de la recomendación del documento</td>
+<td>Porcentaje de  capas publicadas que cumplen cada recomendación</td>
+<td align="center">30%</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h5>Cuadro 9 - Indicadores modificados del tema Metadatos</h5>
+<table>
+<thead>
+<tr>
+<th><strong>Categoría</strong></th>
+<th><strong>Indicadores</strong></th>
+<th><strong>Documento    publicado</strong></th>
+<th><strong>Método de evaluación</strong></th>
+<th><strong>Calificación</strong></th>
+<th><strong>Peso   categoría</strong></th>
+<th><strong>Peso tema</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contenido</td>
+<td>Responsable</td>
+<td><a href="http://idera.gob.ar/images/stories/downloads/estandares/PMIDERA_Perfil_Metadatos_p_Datos_Vectoriales_IDERA_V2_0.pdf">Perfil   de Metadatos para Datos Vectoriales</a></td>
+<td>Verificar el  responsable del dato y el generador de metadato</td>
+<td>Porcentaje de  acuerdo a la cantidad de capas que cumplen</td>
+<td>30%</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Contenido'</td>
+<td>Metadatos del  Servicio en Catálogo de metadatos</td>
+<td><a href="https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-PMSIDERA-Perfil_de_Metadatos_para_Servicios_OGC_IDERA_V_1_0.pdf">Perfil   de metadatos para servicios OGC</a></td>
+<td>Metadato  creado y con elementos obligatorios completos, no por defecto</td>
+<td>Porcentaje de  acuerdo a la cantidad de capas que cumplen</td>
+<td>20%</td>
+<td></td>
+</tr>
+<tr>
+<td>Contenido''</td>
+<td>Título  coincidente con geoservicio y Catálogo de datos</td>
+<td>PENDIENTE</td>
+<td>Verificar  título en WMS, WFS, CSW y Catálogo de objetos</td>
+<td>Porcentaje de  acuerdo a la cantidad de capas que cumplen</td>
+<td>20%</td>
+<td></td>
+</tr>
+<tr>
+<td>Contenido'''</td>
+<td>Link al  Recurso</td>
+<td><a href="https://www.idera.gob.ar/images/stories/downloads/documentos/metadatos/20180202-Guia_de_Buenas_Practicas_de_Metadatos_V1_0.pdf">Buenas   Prácticas en Metadatos</a></td>
+<td>Comprobar que  en el metadato exista un link que permita el acceso al recurso (WMS / WFS,  *.shp, etc.)</td>
+<td>Porcentaje de  acuerdo a la cantidad de capas que cumplen</td>
+<td>30%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5><em>Fuente: elaboración propia en base al relevamiento realizado por el Instituto Geográfico Nacional</em></h5>
+<h3 id="recomendaciones-sobre-el-proceso-de-evaluacion">Recomendaciones sobre el proceso de evaluación<a class="headerlink" href="#recomendaciones-sobre-el-proceso-de-evaluacion" title="Permanent link">&para;</a></h3>
+<p>Para mejorar el proceso de evaluación de IDE de IDERA resultaría conveniente
+invertir recursos en la creación de herramientas que permitan recolectar los
+datos necesarios para realizar la evaluación (tanto por parte de IDERA como la
+autoevaluación desde las propias IDE) de la forma más automatizada posible.</p>
+<p>Ello implica generar procesos de recolección de información que, dado su
+carácter automático, requieran un menor costo en recursos humanos en el mediano
+plazo y que, además, presenten una interfaz amigable que vuelva más interactivo
+y atractivo el proceso de evaluación y autoevaluación. En la siguiente sección
+se muestra un ejemplo de este tipo de proceso de recolección automática de
+datos.</p>
+<p>Se sugiere, al momento de completar el informe anual, incorporar una visita,
+reunión o entrevista (puede ser a distancia) entre el equipo de apoyo a la
+Coordinación Ejecutiva de IDERA y el equipo responsable de la IDE, que permita
+enriquecer la información generada y tener una idea cabal sobre la situación de
+la IDE, haciendo más fácil esta tarea para la IDE evaluada.</p>
+<p>En cuanto al proceso de evaluación en sí mismo, vale recordar la necesidad de
+que pueda llevarse adelante tanto desde la Coordinación Ejecutiva de IDERA como
+desde las propias IDE (autoevaluación), de modo tal que las mismas puedan
+identificar sus problemas y ver la forma de solucionarlos en base a las
+recomendaciones de IDERA.</p>
+<p>Además de su resultado numérico, la evaluación debería documentar los argumentos
+y pruebas por los cuales se asigna una determinada calificación a cada
+indicador, lo que resultaría en un informe de certificación de la IDE que puede
+estar acompañado de sugerencias de mejora.</p>
+<p>Una vez que se haya establecido el circuito en el que se evalúe a todas las IDE
+de máxima jerarquía, debería poder hacerse un informe consolidado que resuma la
+situación de las IDE de Argentina, que se dé a conocer en las jornadas de IDERA
+anuales, como así también que se remita a UN-GGIM.</p>
+<p>En dichas jornadas anuales y tomando esa presentación del informe consolidado
+como disparador, se recomienda que se trabaje sobre los desafíos identificados
+en las evaluaciones para, en función de ello, detectar la necesidad de
+introducir modificaciones en el proceso de evaluación y en los indicadores
+aplicados (metaevaluación) y de que los Grupos de Trabajo de IDERA realicen
+cambios o ampliaciones en los estándares y recomendaciones.</p>
+<p>Asimismo, resulta recomendable que las capacitaciones que se desarrollan en las
+jornadas anuales de IDERA se enfoquen en los resultados de la evaluación de IDE,
+buscando fortalecer las debilidades encontradas, a través de la colaboración del
+Grupo de Trabajo de Capacitación.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Pie">
+        
+          <a href="../5_evaluaciondeide3/" title="Identificación de oportunidades de mejora" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Identificación de oportunidades de mejora
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../5_evaluaciondeide5/" title="Sugerencias para la implementación" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Sugerencias para la implementación
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Trabajo final de carrera Licenciatura en Sistemas de Información Geográfica de Malena Libman
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/malenalibman/" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/malenillavv" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.linkedin.com/in/malena-libman/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.de50e36d.min.js"></script>
+      <script src="../assets/javascripts/bundle.594f2bf6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.c03f0417.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

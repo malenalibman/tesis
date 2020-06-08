@@ -75,9 +75,9 @@ edit_uri: ""
 
 extra:
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github-alt
       link: 'https://github.com/malenalibman/'
-    - type: 'twitter'
+    - icon: material/twitter
       link: 'https://twitter.com/malenillavv'
-    - type: 'linkedin'
+    - icon: material/linkedin
       link: 'https://www.linkedin.com/in/malena-libman/'
