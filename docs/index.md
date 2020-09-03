@@ -14,11 +14,11 @@ Directora: Mariana Gasparotto
 
 ##### A Mariana Gasparotto, directora, colega y amiga
 
-##### A Carlos Rodolfo Martínez, experto en tesis, pero sobre todo partenaire de la vida
-
 ##### A la universidad pública, ahí me caigo siempre
 
-##### Al bodoque, porque no hay nada más puro en este mundo
+##### A los bodoques, porque no hay nada más puro en este mundo
+
+##### A Carlos Rodolfo Martínez, experto en tesis
 
 !!! note ""
 
