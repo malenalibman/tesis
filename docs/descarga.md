@@ -1,11 +1,10 @@
 
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 ## Descarga
 
-<a href="https://github.com/malenalibman/tesis/raw/master/docs/media/tesis.pdf" target="_blank">Trabajo final de Carrera (5/2020) :fas fa-external-link-alt:</a>
+<a href="https://github.com/malenalibman/tesis/raw/master/docs/media/tesis.pdf" target="_blank">Trabajo final de Carrera (5/2020) :fa-link:</a>
 
-<a href="https://docs.google.com/spreadsheets/d/1a9q0ncHGxq6-kiq9kcYZL6sk_VPYgZ4NFtkoa1sor08/edit?usp=sharing" target="_blank">Esquema de evaluación de IDERA v2 :fas fa-external-link-alt:</a>
-
+<a href="https://docs.google.com/spreadsheets/d/1a9q0ncHGxq6-kiq9kcYZL6sk_VPYgZ4NFtkoa1sor08/edit?usp=sharing" target="_blank">Esquema de evaluación de IDERA v2 :fa-link:</a>
 
 <br>
 <br>
